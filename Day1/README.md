@@ -89,6 +89,27 @@
 - each containers gets its own port range - ( 0 to 65535 )
 </pre>
 
+## Info - Container Runtime Overview
+<pre>
+- container runtime is a low-level software that can manage container images and containers
+- example
+  - runC
+  - CRI-O
+- container runtimes are not so user-friendly, hence normally no end-users use this directly
+</pre>  
+
+## Info - Container Engine
+<pre>
+- container engine is a high-level software than can manage container image and containers
+- container engine depends on container runtime to manage container images and containers
+- container engine provide user-friendly commands i.e without knowing the linux kernel lower level knowledge we can easily create and manage container and images
+- examples
+  - Docker
+    - depends on containerd, containerd depends on runC container runtime internally
+  - Podman
+    - depends on CRI-O container runtime
+</pre>  
+
 ## Info - High Availability (HA)
 <pre>
 - always the application should be up and running
