@@ -15,7 +15,32 @@
     - is opensource
   - BootCamp
     - is a boot loader used to support windows on a Mac machine
-  
+</pre>  
+
+## Processor
+<pre>
+- Processors comes in 2 types of Packaging
+  - SCM 
+    - Single Chip Module
+    - one IC will have just one Processor
+  - MCM 
+    - Multiple Chip Module
+    - one IC will have many Processors
+- Each Processor may support many CPU Cores
+  - 256 cores per Processor
+  - 512 cores per Processor
+  - 128 cores per processor
+  - 64 cores per processor
+- Server grade motherboards will support many Processor sockets
+- assume a server motherboard support 4 Processor Sockets
+- in each of those Processor Socket, if we install a MCM Processor with 4 Processor per IC
+- in total how many Processor in the motherboard 16 Processors
+- let's assume each Processor supporting 128 cores
+- total cpu cores 128 x 16 = 2048 Physical CPU Cores
+- For Hypervisors, they look for logical/virtual core
+  - each Physical core supports 2 to 4 virtual cores, in a normal processor each physical core supports 2 logical/virtual core
+  - how many logical cores Hypervisors will see 2048 x 2 = 4096 Logical/Virtual Cores
+
 </pre>  
 
 ## Hypervisor Overview
@@ -33,7 +58,8 @@
      - Examples
        - VMWare Wokstation ( Windows & Linux )
        - VMWare Fusion ( Mac OS-X )
-       - Hypervisor ( Windows )
+       - Hyper-V ( Windows )
+       - Parallels( Mac OS-X )
 - Each Virtual Machines that runs on top of Hypervisor, will allocated with dedicated
   - CPU Cores ( Logical or Virtual Cores )
   - RAM 
@@ -42,6 +68,16 @@
   - Virtual Graphics Card
 - Each Virtual Machine(VM - aka Guest OS) represents one fully functional Operating System
 - This type of virtualization is called Heavy weight Virtualization, the reason being each VM requires dedicated hardware resources
+</pre>
+
+## Container Technology
+<pre>
+- an application virtualization technology
+- each container represents one application process
+- containers are not Operating system
+- container may resemble like a VM or an OS in certain ways but they are just application process
+- this type of virtualization is called lite-weight virtuatlization
+- all the containers running on an OS shares the hardware resources available to the underlying OS
 </pre>
 
 ## Info - Container Orchestration Platform Overview
