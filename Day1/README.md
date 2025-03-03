@@ -149,9 +149,12 @@
 - though it supports minimal Dashboard(Web interface), the Web interface poses many security issues compared to advantages, hence it is considered only as a command-line tool
 - Kubernetes supports extending its REST API or features by defining new Resources using Custom Resource Definitions
 - to manage your Custom Resource, we also need to develop custom operators, this way we can add additional functionalities on top of Kubernetes
+- Public cloud vendors support managed service
+  - eks - Elastic Kubernetes Service ( PaaS )
+  - aks - Azure Kubernetes Service ( PaaS )
 </pre>
 
-Info - Red Hat Openshift
+## Info - Red Hat Openshift
 <pre>
 - Red Hat Openshift is developed on top of Google Kubernetes
 - Using the Kubernets Custom Resource and Custom Operators, Red Hat Openshift team has added many new features on top of Kubernetes
@@ -162,4 +165,7 @@ Info - Red Hat Openshift
   - Web Interface
   - Role Based Access Control, User management
   - CI/CD 
+- Public cloud Managed Openshift Service
+  - AWS ROSA
+  - Azure ARO
 </pre>
