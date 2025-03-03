@@ -176,6 +176,37 @@
 - However, Red Hat Openshift recommned using RHCOS Operating System in Master and Worker Nodes
 </pre>
 
+## Kubernetes/Openshift Master Nodes
+<pre>
+- Supports a special set of components called Control Plane Components
+- they could even be an ec2 instance in AWS or Azure VMs or an on-prem VM
+- Control Plane Components
+  1. API Server
+  2. etcd 
+  3. scheduler
+  4. controller manager(s)
+- control plane components runs only in master nodes
+- control plane components are the ones which support the container orchestration features
+- Every production grade Openshift supports atleast 3 master nodes
+- By default, only control planes components will be deployed on master nodes, however it is possible to configure master nodes to allow deploying user applications as well
+</pre>
+
+## Kubernetes/Openshift Worker Nodes
+<pre>
+- worker node could be a physical server or a virtual machine
+- they could even be an ec2 instance in AWS or Azure VMs or an on-prem VM
+- This is where user application container workloads runs or deployed
+</pre>  
+
+## Kubernetes/Openshift Cluster
+<pre>
+- a group of servers/nodes that form a Kubernetes/Openshift cluster
+- kubernetes/openshift comes with client tools
+  - kubectl - is a kubernetes client tool which helps us interact with Kuberntes/Openshift cluster
+  - oc - is an openshift client tool that helps us to interact with Openshift cluster
+  - both kubectl and oc depends on a kubeconfig file kept in your home directory /home/jegan/.kube/config ( in your case /home/user01/.kube/config )
+  
+</pre>  
 
 ## Info - Pod Overview
 <pre>
