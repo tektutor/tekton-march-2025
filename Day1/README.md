@@ -78,6 +78,21 @@
 - container may resemble like a VM or an OS in certain ways but they are just application process
 - this type of virtualization is called lite-weight virtuatlization
 - all the containers running on an OS shares the hardware resources available to the underlying OS
+- every container is isolated by namespaces
+  - container use port namespace
+  - container use PID namespace
+  - container use network namespace
+- each container has its own network stack ( 7 OSI Layers )
+- each container has its own software defined network cards (NIC)
+- each container gets atleast one IP Address ( normally Private IP address )
+- each container gets its own file system
+- each containers gets its own port range - ( 0 to 65535 )
+</pre>
+
+## Info - High Availability (HA)
+<pre>
+- always the application should be up and running
+- 
 </pre>
 
 ## Info - Container Orchestration Platform Overview
