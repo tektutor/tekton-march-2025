@@ -149,6 +149,7 @@
 - though it supports minimal Dashboard(Web interface), the Web interface poses many security issues compared to advantages, hence it is considered only as a command-line tool
 - Kubernetes supports extending its REST API or features by defining new Resources using Custom Resource Definitions
 - to manage your Custom Resource, we also need to develop custom operators, this way we can add additional functionalities on top of Kubernetes
+- intially both Kubernetes and Openshift was supporting docker as the default container engines, but later docker support was removed
 - Public cloud vendors support managed service
   - eks - Elastic Kubernetes Service ( PaaS )
   - aks - Azure Kubernetes Service ( PaaS )
@@ -168,4 +169,16 @@
 - Public cloud Managed Openshift Service
   - AWS ROSA
   - Azure ARO
+- Starting Red Hat Openshift 4.x, docker support was removed
+- Starting from Red Hat Openshift 4.x, Openshift only supports Podman Container Engine with CRI-O Container Runtime
+- Starting from Red Hat Openshift 4.x onwards, OpenShift only supports Red Hat Enterprise Core OS (RHCOS) as the operating system for Red Hat Openshift Master nodes
+- Starting from Red Hat Openshift 4.x onwards, OpenShift supports two OS, i.e either Red Hat Enterprise Linux (RHEL) or Red Hat Enterprise Core OS (RHCOS) as the operating system for Red Hat Openshift Worker nodes
+- However, Red Hat Openshift recommned using RHCOS Operating System in Master and Worker Nodes
+</pre>
+
+
+## Info - Pod Overview
+<pre>
+- a group of related containers  
+  
 </pre>
