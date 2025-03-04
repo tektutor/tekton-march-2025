@@ -240,4 +240,13 @@ exit
 Expected output
 ![image](https://github.com/user-attachments/assets/3760ec9c-bfe0-4f6e-9194-ff147771c664)
 
+## Lab - Scale up nginx deployment
+```
+oc scale deploy/nginx --replicas=3
+oc get po
+oc get po -o w
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/3ad0ddda-031c-43fc-88d7-b981014ee174)
 
