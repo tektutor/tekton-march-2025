@@ -170,3 +170,12 @@ oc get po
 
 Expected output
 ![image](https://github.com/user-attachments/assets/031ace7b-e9f6-4b74-b928-70ba623b6534)
+
+## Lab - Troubleshooting Pod
+We can check application logs
+```
+oc logs nginx-c95765fd4-5psct
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/5f986370-d903-4c94-9218-8649a31cc76b)
