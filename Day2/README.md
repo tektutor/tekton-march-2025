@@ -120,3 +120,22 @@ oc project
 
 Expected output
 ![image](https://github.com/user-attachments/assets/7dc521aa-0f06-41fd-bb8a-0e348932c0a9)
+
+List all the projects in openshift
+```
+oc get projects
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/8afdd1d8-b309-4a4e-b71a-92d7d6e0582a)
+
+Switching from one project to other
+```
+oc project default
+oc project
+oc project jegan
+oc project
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/345aae04-ef40-4ec8-9a6a-276f85b62759)
