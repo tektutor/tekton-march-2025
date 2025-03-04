@@ -10,6 +10,11 @@
 - The pause container supports networking for the application container
 - in addition to these 2 containers, it is possible to have additional container within the same Pod as side-car containers
 - side-car container are supporting containers that will help expose the application metrics, logs, etc for elk, splunk, prometheus, etc.,
+- this is the smallest unit that can be deployed into Kubernetes or Openshift
+- For example
+  - Let's say we have a microservice that retrieve data from a mongodb database
+  - In this case, the microservice application will be deployed in one Pod, while the mongodb database will be deployed onto another Pod
+  - This way, we can scale up/down the microservice Pods independently without scaling up/down of mongodb pods
 </pre>
 
 
