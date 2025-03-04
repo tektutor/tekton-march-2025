@@ -250,3 +250,19 @@ oc get po -o w
 Expected output
 ![image](https://github.com/user-attachments/assets/3ad0ddda-031c-43fc-88d7-b981014ee174)
 
+
+## Lab - Let's create a service and route to access the nginx web page
+```
+oc get pods
+oc expose deploy/nginx --port=8080
+oc get services
+oc get service
+oc get svc
+
+oc expose svc/nginx
+curl http://nginx-jegan.apps.ocp4.alchemy.com
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/52d4b0cb-e2a4-49a6-8b06-8c643f1e45cf)
+![image](https://github.com/user-attachments/assets/39d06303-464e-4ec2-84a6-dacb5676e7ef)
