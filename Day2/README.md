@@ -191,3 +191,14 @@ oc get deploy,rs,po
 
 Expected output
 ![image](https://github.com/user-attachments/assets/c50d7984-8f4e-49a3-9724-aec8a163dd96)
+
+
+## Lab - Let's deploy nginx with bitnami docker image 
+```
+oc project
+oc create deployment nginx --image=bitnami/nginx:latest --replicas=3
+oc get deploy,rs,po
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/838b2a55-6927-48a7-b206-4c7ff53a98ae)
