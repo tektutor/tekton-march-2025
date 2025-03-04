@@ -106,11 +106,17 @@ Expected output
 - before deploying our application, we need to create a project aka namespace in Kubernetes
 - within the project, we can deployment our applications
 - one project can have multiple application deployments
+- project must be all lower case only
 </pre>
 
 Let's create a deployment in Openshift using imperative command
 ```
 oc new-project jegan
 ```
+Find the currently active project
+```
+oc project
+```
 
 Expected output
+![image](https://github.com/user-attachments/assets/7dc521aa-0f06-41fd-bb8a-0e348932c0a9)
