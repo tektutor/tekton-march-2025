@@ -46,7 +46,6 @@
   - This way, we can scale up/down the microservice Pods independently without scaling up/down of mongodb pods
 </pre>
 
-
 ## Info - ReplicaSet
 <pre>
 - is a configuration that tells how many desired pods are supposed to be running
@@ -56,6 +55,26 @@
 - Whenever there is a difference between the desired number of Pods and actual number of Pods, the Replication Controller will create additional in case the actual number of Pods are less than the desired number of Pods.
 - In case the actual number of Pods is greater than the desired number of Pods, the Replication Controller will delete some Pods to match the desired and actual number of Pods
 </pre>
+
+## Info - Deployment
+<pre>
+- is a configuration that tells 
+  - what is the name of the deployment(application)
+  - how many Pod instances should be created
+  - what is the container image that must be used to create the Pod(s)
+- Deployment configuration is taken as an input by Deployment Controller
+- Deployment Controller manages Deployment
+- Deployment Controller keeps monitoring for
+  - new Deployment created
+  - existing Deployment edited/updated
+  - existing deployment deleted
+- Whenever resources
+  - are created
+  - edited
+  - deleted
+  api server will notify via events, controllers will then act to ensure the desired state and actual state matches
+</pre>
+
 
 ## Lab - Listing the openshift cluster nodes 
 ```
