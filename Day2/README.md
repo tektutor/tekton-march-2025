@@ -44,6 +44,7 @@
   - Let's say we have a microservice that retrieve data from a mongodb database
   - In this case, the microservice application will be deployed in one Pod, while the mongodb database will be deployed onto another Pod
   - This way, we can scale up/down the microservice Pods independently without scaling up/down of mongodb pods
+- In Kubernetes/Openshift, IP address is assigned on the Pod level not on the container level
 </pre>
 
 ## Info - ReplicaSet
