@@ -20,6 +20,8 @@
 
 ## Info - ReplicaSet
 <pre>
+- is a configuration that tells how many desired pods are supposed to be running
+- ReplicaSet Controller use this configuration to perform scale up/down 
 - Replicaset tells how many Pod instances should be running at any point of time
 - Desired number of Pods, Actual number of Pods
 - Whenever there is a difference between the desired number of Pods and actual number of Pods, the Replication Controller will create additional in case the actual number of Pods are less than the desired number of Pods.
