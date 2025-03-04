@@ -207,6 +207,21 @@ Expected output
 ## Lab - Let's create Pod with plain docker 
 ```
 docker pull gcr.io/google-containers/pause:latest
+docker run -d --name nginx-pause --hostname nginx-pause gcr.io/google-containers/pause:latest
+docker run -d --name nginx --network=container:nginx-pause bitnami/nginx:latest
+```
+
+Finding the IP Address of nginx-pause container
+```
+docker inspect -f {{.NetworkSettings.IPAddress}} nginx-pause
+```
+
+Getting inside the nginx container shell
+```
+docker exec -it nginx sh
+hostname
+hostname -i
+exit
 ```
 
 Expected output
