@@ -260,6 +260,7 @@ oc get service
 oc get svc
 
 oc expose svc/nginx
+oc get routes
 curl http://nginx-jegan.apps.ocp4.alchemy.com
 ```
 
