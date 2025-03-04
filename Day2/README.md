@@ -203,3 +203,11 @@ oc get deploy,rs,po
 
 Expected output
 ![image](https://github.com/user-attachments/assets/838b2a55-6927-48a7-b206-4c7ff53a98ae)
+
+## Lab - Let's create Pod with plain docker 
+```
+docker pull gcr.io/google-containers/pause:latest
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/3760ec9c-bfe0-4f6e-9194-ff147771c664)
