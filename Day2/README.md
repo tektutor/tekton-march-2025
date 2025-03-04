@@ -11,6 +11,15 @@
 ## Info - Controller Managers 
 <pre>
 - is a collectionof many controllers
+- controller is an application that runs always like a server
+- each controller manages one type of resource
+- controller keeps detects when
+  - new resources are created in the cluster
+  - existing resources are modified in the cluster
+  - existing resources are deleted from the cluster
+- For example
+  - Deployment Controller manages Deployment resource
+  - ReplicaSet Controller manages ReplicaSet resource
 - example
   - Deployment Controller
   - ReplicaSet Controller
