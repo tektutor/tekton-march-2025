@@ -1,5 +1,18 @@
 # Day 2
 
+## Info - Pod
+<pre>
+- Pod is a group of related containers
+- Applications run within a Pod
+- Each Pod has atleast 2 containers in it
+- Each Pod will have just one main application
+- The other hidden pod is called infra-pod aka pause container
+- The pause container supports networking for the application container
+- in addition to these 2 containers, it is possible to have additional container within the same Pod as side-car containers
+- side-car container are supporting containers that will help expose the application metrics, logs, etc for elk, splunk, prometheus, etc.,
+</pre>
+
+
 ## Lab - Listing the openshift cluster nodes 
 ```
 oc get nodes
