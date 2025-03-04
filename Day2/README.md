@@ -179,3 +179,15 @@ oc logs nginx-c95765fd4-5psct
 
 Expected output
 ![image](https://github.com/user-attachments/assets/5f986370-d903-4c94-9218-8649a31cc76b)
+
+## Lab - Deleting the nginx deployment
+```
+oc project jegan
+oc get deployments
+oc delete deployment/nginx
+
+oc get deploy,rs,po
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/c50d7984-8f4e-49a3-9724-aec8a163dd96)
