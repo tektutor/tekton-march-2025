@@ -266,3 +266,8 @@ curl http://nginx-jegan.apps.ocp4.alchemy.com
 Expected output
 ![image](https://github.com/user-attachments/assets/52d4b0cb-e2a4-49a6-8b06-8c643f1e45cf)
 ![image](https://github.com/user-attachments/assets/39d06303-464e-4ec2-84a6-dacb5676e7ef)
+
+## Info - Finding the openshift.txt file in your lab environment
+```
+cat ~/openshift.txt
+```
