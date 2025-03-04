@@ -139,3 +139,34 @@ oc project
 
 Expected output
 ![image](https://github.com/user-attachments/assets/345aae04-ef40-4ec8-9a6a-276f85b62759)
+
+## Lab - Deploying your first application
+```
+oc project jegan
+oc create deployment nginx --image=nginx:latest --replicas=3
+```
+
+List thde deployments
+```
+oc get deployments
+oc get deployment
+oc get deploy
+```
+
+List the replicasets
+```
+oc get replicasets
+oc get replicaset
+oc get rs
+```
+
+
+List the pods
+```
+oc get pods
+oc get pod
+oc get po
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/031ace7b-e9f6-4b74-b928-70ba623b6534)
