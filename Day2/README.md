@@ -1,5 +1,25 @@
 # Day 2
 
+# Info - Control Plane Components ( runs in every master node )
+<pre>
+1. API Server (Pod)
+2. etcd (Pod)
+3. scheduler (Pod)
+4. controller managers (Pod)
+</pre>  
+
+## Info - Controller Managers 
+<pre>
+- is a collectionof many controllers
+- example
+  - Deployment Controller
+  - ReplicaSet Controller
+  - Job controller
+  - CronJob controller
+  - StatefulSet controller
+  - DaemonSet Controller
+</pre>  
+
 ## Info - Pod
 <pre>
 - Pod is a group of related containers
