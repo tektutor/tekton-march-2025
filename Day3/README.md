@@ -155,3 +155,33 @@ Expected output
 - In case of ClusterIP/NodePort, Kubernetes/Openshift supports loadbalancing implemented by Kurbernetes/Openshift using kube-proxy which is free
 - For some reason, if you prefer using this type of service in an Openshift/Kubernetes on-prem setup, you need to install MetalLB operator and configure it to spin-off loadbalance in an on-prem environments like our lab setup
 </pre>
+
+## Lab - Creating an internal clusterip service for nginx deployment
+```
+oc new-project jegan
+oc create deployment nginx --image=bitnami/nginx:latest --replicas=3
+oc get po -w
+```
+
+Creating an internal service
+```
+oc expose deploy/nginx --port=8080
+```
+
+Listing the service
+```
+oc get services
+oc get service
+oc get svc
+```
+
+Finding service details
+```
+oc describe svc/nginx
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/b254919c-353a-4ea6-9845-dbd6b4975b0c)
+![image](https://github.com/user-attachments/assets/648b81ea-a358-49cf-9a39-64d3ed485508)
+![image](https://github.com/user-attachments/assets/370acc22-3a91-4055-963a-702491747999)
+
