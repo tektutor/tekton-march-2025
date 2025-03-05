@@ -95,7 +95,7 @@ Expected output
 
 #### Note
 <pre>
-- This testing approach is works well for developers
+- This testing approach works well for developers
 - This is not an option for end-users or production environments
 - For end-users, we need to create service with routes to provide an user-friendly public url 
 </pre>
