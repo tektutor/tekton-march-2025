@@ -21,3 +21,23 @@
 - is a Pod reponsible for resolving the Service name to respective IP address
 - there would be one kube-dns Pod running on each node
 </pre>
+
+## Lab - Describe a service to find the pod endpoints
+```
+oc project jegan
+oc scale deploy/nginx --replicas=0
+oc get services
+oc describe service/nginx
+oc get endpoints
+
+oc scale deploy/nginx --replicas=3
+oc get services
+oc describe service/nginx
+oc get endpoints
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/46251478-3e3d-4ccf-96c2-a62208ebee03)
+
+
+
