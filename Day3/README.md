@@ -93,3 +93,9 @@ Expected output
 ![image](https://github.com/user-attachments/assets/867bb79c-cef1-44bb-a522-d3bf8dc30372)
 ![image](https://github.com/user-attachments/assets/988db639-071e-41df-9588-8f11e680a9f2)
 
+#### Note
+<pre>
+- This testing approach is works well for developers
+- This is not an option for end-users or production environments
+- For end-users, we need to create service with routes to provide an user-friendly public url 
+</pre>
