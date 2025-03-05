@@ -145,3 +145,13 @@ Expected output
   - We will end-up opening many ports in firewall, which is not preferred
   - It is not user friendly
 </pre>
+
+## Info - LoadBalancer Service
+<pre>
+- This is yet another external service supported by kubernetes and openshift
+- Meant to be used in public cloud environments like AWS, AZure, etc
+- In AWS, we have ALB/ELB managed load balancers, if we wish AWS ALB/ELB to load balance our application pods, then we can go for this service
+- There would be extra charge for the ALB/ELB from AWS/Azure
+- In case of ClusterIP/NodePort, Kubernetes/Openshift supports loadbalancing implemented by Kurbernetes/Openshift using kube-proxy which is free
+- For some reason, if you prefer using this type of service in an Openshift/Kubernetes on-prem setup, you need to install MetalLB operator and configure it to spin-off loadbalance in an on-prem environments like our lab setup
+</pre>
