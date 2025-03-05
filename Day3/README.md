@@ -99,3 +99,48 @@ Expected output
 - This is not an option for end-users or production environments
 - For end-users, we need to create service with routes to provide an user-friendly public url 
 </pre>
+
+## Info - Openshift Service
+<pre>
+- Kubernetes/Openshift service represents a group of Pods from a single deployment
+- service represents group of load balanced pods
+- service gets its own user-friendly name and IP address, which are stable
+- the Pods could come and go any point of time, hence using Pod name, Pod IPs is not a good practice, instead we should services
+- Services are broadly classified into two types
+  1. Internal Service and
+     - ClusterIP 
+  2. External Service
+     - NodePort
+     - LoadBalancer
+</pre>
+
+
+## Info - ClusterIP Internal Service
+<pre>
+- it is meant for Internal consumption
+- Pods running within the same Kubernetes/Openshift cluster can access the service
+- We won't be able to access the cluster-ip service outside scope of openshift cluster
+- Examples
+  - Database Pods are only accessed by other Microservice or Frontends pods, hence internal service is more than enough
+- Cluster IP Services can be access from Pod shell using the clusterip service name or ClusterIP service IP address
+</pre>
+
+## Info - NodePort External Service
+<pre>
+- This service helps us access the features offered by Pods outside the openshift cluster  
+- Example
+  - Assume there is Weather application that can give you forecast of any Indian city for the next 7 days
+  - as this is frontend application that end-users will be accessing, we need expose it as an external service
+- How NodePort service can be access
+  - Using the NodeIP and Node Port
+  - curl http://master1-node-ip-address:30050
+  - curl http://master2-node-ip-address:30050
+  - curl http://master3-node-ip-address:30050
+  - curl http://worker1-node-ip-address:30050
+  - curl http://worker2-node-ip-address:30050
+  - curl http://worker3-node-ip-address:30050
+- For each NodePort service we create, one dedicated port will alloted for that service, the port is opened on all the nodes present in the openshift cluster
+- Drawback of NodePort Service
+  - We will end-up opening many ports in firewall, which is not preferred
+  - It is not user friendly
+</pre>
