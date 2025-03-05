@@ -40,4 +40,56 @@ Expected output
 ![image](https://github.com/user-attachments/assets/46251478-3e3d-4ccf-96c2-a62208ebee03)
 
 
+## Lab - Creating a nginx deployment and accessing the web pages using pods IP addresses
+```
+oc delete project jegan
+
+oc new-project jegan
+oc create deployment nginx --image=bitnami/nginx:latest --replicas=3
+```
+Expected output
+![image](https://github.com/user-attachments/assets/27195d22-525e-469c-a483-1e0897f3c1d7)
+![image](https://github.com/user-attachments/assets/cbd86f1b-7a80-47f6-bf5a-30d4c7f83940)
+
+
+Let's list the pods with their IP address and the node where they are running
+```
+oc get pods -o wide
+```
+
+In case, you are getting ImagePullBack error due to docker rate limit, you could workaround by editing the deployment. You need to replace ImagePullPolicy from 'Always' to 'IfNotPresent', save and exit
+```
+oc edit deploy/nginx 
+```
+
+Now you should be able to see the pods
+```
+oc get po -o wide
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/87518ef4-61d5-41ba-9af4-5d1d29582aea)
+![image](https://github.com/user-attachments/assets/c7d41310-b44b-4e4e-bb40-9f4aee7e798e)
+
+
+The Pods are assigned with Private Ips, they are accessible only within the Openshift cluster, ie. from openshift nodes or from Pods running within the cluster. In order to access the Pod IP, let's create a test deployment
+```
+oc create deployment test --image=tektutor/spring-ms:1.0
+oc get po
+```
+
+Let's get inside the test pod shell
+```
+oc rsh deploy/test
+curl http://<nginx-pod-ip>:8080
+curl http://10.128.2.96:8080
+curl http://10.131.0.86:8080
+curl http://10.129.3.33:8080
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/849ebb9f-dee5-48f9-9950-1ac9b9852c14)
+![image](https://github.com/user-attachments/assets/ba753203-3a52-4920-8823-633e9b891628)
+![image](https://github.com/user-attachments/assets/867bb79c-cef1-44bb-a522-d3bf8dc30372)
+![Uploading image.png…]()
 
