@@ -106,6 +106,7 @@ Expected output
 - service represents group of load balanced pods
 - service gets its own user-friendly name and IP address, which are stable
 - the Pods could come and go any point of time, hence using Pod name, Pod IPs is not a good practice, instead we should services
+- all the 3 services are originally supported by Kubernetes, hence they also work in Openshift
 - Services are broadly classified into two types
   1. Internal Service and
      - ClusterIP 
