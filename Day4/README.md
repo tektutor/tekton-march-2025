@@ -13,18 +13,19 @@
 ## Lab - Deploying application into openshift using source strategy
 ```
 oc project jegan
-oc new-app https://github.com/tektutor/spring-ms.git --strategy=docker
-oc logs -f bc/spring-ms
-oc start-build bc/spring-ms
+oc new-app https://github.com/tektutor/hello-microservice.git --strategy=docker
+oc logs -f bc/hello-microservice
+oc expose service/hello-microservice
 ```
 Expected output
-![image](https://github.com/user-attachments/assets/8d66a789-9490-44f2-bc33-b91eac53af93)
-![image](https://github.com/user-attachments/assets/5ec50c93-3b6d-41e6-8260-f4c0d688a427)
+![image](https://github.com/user-attachments/assets/a2c744cf-b9e1-46bd-9553-28ea89e22864)
+![image](https://github.com/user-attachments/assets/d31a061b-2e20-4ac6-a73c-68a498082415)
+![image](https://github.com/user-attachments/assets/23d176b1-5377-47c5-9a4d-a4b5bfc5a1b4)
 
-In case your build failed, you wish to delete the resources in your project
-```
-oc delete deploy/spring-ms svc/spring-ms bc/spring-ms
-```
+Navigate to Openshift Dashboard, select your project to see the output
+![image](https://github.com/user-attachments/assets/f74ecd70-3c95-4415-87d2-276eea608ae1)
+![image](https://github.com/user-attachments/assets/28f52032-c306-4cad-953c-08dc44ceeebb)
+
 
 ####
 <pre>
