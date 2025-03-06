@@ -43,4 +43,46 @@ oc delete project jegan
 Expected output
 ![image](https://github.com/user-attachments/assets/a5f49ee6-b408-4714-b4b0-a41ade8ff81c)
 
-##
+## Lab - Understanding the purpose of Custom Container Image and Dockerfile 
+Let's create a container
+```
+docker run -dit --name ubuntu1 --hostname ubuntu1 ubuntu:latest /bin/bash
+docker ps
+```
+
+Getting inside the container
+```
+docker exec -it ubuntu1 /bin/bash
+javac -version
+java -version
+mvn --version
+tree
+curl
+git -version
+```
+
+Now we understand that the ubuntu:latest image we downloaded from hub.docker.com doesn't have the tools we need, so let's create a custom image using ubuntu:latest as the base image.
+
+Let's create a Dockerfile
+```
+cd ~
+mkdir CustomDockerImage
+touch Dockerfile
+```
+
+Update the ~/CustomDockerImage/Dockerfile with the below content
+<pre>
+FROM ubuntu:latest
+
+RUN apt update && apt install -y default-jdk maven git tree curl net-tools iputils-ping
+</pre>
+
+Let's build a custom docker image using the Dockerfile as shown below
+```
+cd ~/CustomDockerImage
+docker build -t tektutor/maven:1.0 .
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/50c9ed29-aeb8-489b-acae-ac749c8a25ec)
+
