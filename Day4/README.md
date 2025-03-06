@@ -14,8 +14,11 @@
 ```
 oc project jegan
 oc new-app https://github.com/tektutor/spring-ms.git --strategy=docker
+oc logs -f bc/spring-ms
 ```
 Expected output
+![image](https://github.com/user-attachments/assets/8d66a789-9490-44f2-bc33-b91eac53af93)
+![image](https://github.com/user-attachments/assets/5ec50c93-3b6d-41e6-8260-f4c0d688a427)
 
 
 ## Lab - Deleting an Openshift project
