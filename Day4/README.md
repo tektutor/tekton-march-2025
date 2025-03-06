@@ -10,7 +10,7 @@
   - Dockerfile
 </pre>
 
-## Lab - Deploying application into openshift using source strategy
+## Lab - Deploying application into openshift using docker strategy
 ```
 oc project jegan
 oc new-app https://github.com/tektutor/hello-microservice.git --strategy=docker
