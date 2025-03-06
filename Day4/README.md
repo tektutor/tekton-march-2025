@@ -26,6 +26,14 @@ In case your build failed, you wish to delete the resources in your project
 oc delete deploy/spring-ms svc/spring-ms bc/spring-ms
 ```
 
+####
+<pre>
+- Whenever we deploy application from GitHub source code, openshift creates a BuildConfig
+- The Build config captures GitHub repository url, strategy that must used to build the application and container image
+- Once the image build is successfully completed, it will push the custom container image that has your application binary into Openshift's Internal Registry
+- Now from the Openshift's Internal Registry, it will try to deploy your application
+</pre>
+
 
 ## Lab - Deleting an Openshift project
 ```
