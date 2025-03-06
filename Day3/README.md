@@ -132,6 +132,7 @@ Expected output
 - Example
   - Assume there is Weather application that can give you forecast of any Indian city for the next 7 days
   - as this is frontend application that end-users will be accessing, we need expose it as an external service
+- Ports in the range 30000-32767 are reserved for NodePort service in Kubernetes and Openshift
 - How NodePort service can be access
   - Using the NodeIP and Node Port
   - curl http://master1-node-ip-address:30050
@@ -141,7 +142,7 @@ Expected output
   - curl http://worker2-node-ip-address:30050
   - curl http://worker3-node-ip-address:30050
 - For each NodePort service we create, one dedicated port will alloted for that service, the port is opened on all the nodes present in the openshift cluster
-- Drawback of NodePort Service
+- Drawbacks of NodePort Service
   - We will end-up opening many ports in firewall, which is not preferred
   - It is not user friendly
 </pre>
@@ -165,7 +166,7 @@ oc get po -w
 
 Creating an internal service
 ```
-oc expose deploy/nginx --port=8080
+oc expose deploy/nginx --port=8080 --type=ClusterIP
 ```
 
 Listing the service
