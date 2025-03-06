@@ -11,6 +11,8 @@
 </pre>
 
 ## Lab - Deploying application into openshift using docker strategy
+When we use docker strategy, openshift will look for Dockerfile after cloning the source code from GitHub.
+
 ```
 oc project jegan
 oc new-app https://github.com/tektutor/hello-microservice.git --strategy=docker
