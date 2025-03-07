@@ -129,6 +129,15 @@ Expected output
 ![image](https://github.com/user-attachments/assets/030412a1-a3eb-42f6-a143-9dc34d525bae)
 
 ## Demo - Installing Metallb operator to support LoadBalancer service in on-prem(bare-metal) openshift setup
+To find the openshift webconsole url and login credentials
+```
+cat ~/openshift.txt
+```
+You could also find the webconsole url as shown below
+```
+oc whoami --show-console
+```
+
 Navigate to Openshift Dashboard as an Administrator
 ![image](https://github.com/user-attachments/assets/94005f06-8a10-4abf-bdb1-5f4c8878ce42)
 Click "Operators" on the left side menu
