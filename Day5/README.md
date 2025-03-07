@@ -1,5 +1,21 @@
 # Day 5
 
+## Info - Openshift Internal Image Registry
+<pre>
+- When we install Openshift, we also deploy Openshift Internal Registry to store multiple container images in it
+- Whenever we deploy applications using 'oc create' or 'oc new-app' or using Openshift webconsole, the images we mention, openshift will search the image first in the Openshift Internal Registry, if the image is not there, then it downloads from the Docker Hub or whatever url is mentioned in the container imaage.
+- We can thing of Openshift Internal Image Registry as server that stores many container images
+</pre>  
+
+## Info - Openshift ImageStream
+<pre>
+- Image Stream is a folder we create within the Openshift Internal Image Registry to store a particular image
+- Image Stream will allow us to store multiple versions of a single container image
+- For example
+  - Assume we have created a ImageStream with a name hello
+  - We can store image version hello:1.0, hello:2.0, hello:3.0 within the image stream named hello
+</pre>
+
 ## Demo - Importing docker image from Docker Hub Repository to Openshift's Internal registry ( Kindly avoid importing additional images to avoid exhausting the docker limit )
 ```
 docker login
