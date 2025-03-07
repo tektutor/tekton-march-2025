@@ -146,4 +146,23 @@ Select "Operator Hub"
 ![image](https://github.com/user-attachments/assets/1bcfebb0-32aa-4ffd-86eb-433db0f186a6)
 Search "Metal"
 ![image](https://github.com/user-attachments/assets/16af6666-a6f5-4d2d-83e2-5f7ed08679a0)
+Select "MetalLB Operator"
+![image](https://github.com/user-attachments/assets/845b3135-f902-4ea8-bc70-c860071c7854)
+Click "Install"
+![image](https://github.com/user-attachments/assets/04f4dd50-26f8-41c5-b1b0-319c5170fd42)
+Let's go with the default options, hence no need to change anything
+![image](https://github.com/user-attachments/assets/604eec9a-0184-4e6e-b84d-b649faee8480)
+Scroll down and click "Install"
+![image](https://github.com/user-attachments/assets/113d8739-624c-49a6-b9c3-f3f3b9c13cf6)
+![image](https://github.com/user-attachments/assets/fabf5cc5-9acd-4e9b-89fd-0d3eb2c5bc97)
+We need to configure Metallb Operator, Let's click "View operator"
+![image](https://github.com/user-attachments/assets/b390997f-11c0-48c2-bf42-f1d60c0d93e6)
+Click "IPAddressPool" Create Instance
+![image](https://github.com/user-attachments/assets/d9e340b5-06aa-4d9a-87b6-749e205b2da1)
+To find a range of IP address that is not in use, let's run the below command
+```
+oc get nodes -o wide
+```
+![image](https://github.com/user-attachments/assets/b14817cb-e83b-4de1-9a56-0134510dde4d)
+
 
