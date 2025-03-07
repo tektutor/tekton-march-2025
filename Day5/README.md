@@ -11,3 +11,7 @@ oc import-image bitnami/nginx:latest bitnami/nginx:latest docker.io/library/bitn
 ```
 
 Expected output
+![outpu](img1.png)
+![outpu](img2.png)
+![outpu](img3.png)
+![outpu](img4.png)
