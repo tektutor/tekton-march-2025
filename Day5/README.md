@@ -1,6 +1,6 @@
 # Day 5
 
-## Demo - Importing docker image from Docker Hub Repository to Openshift's Internal registry
+## Demo - Importing docker image from Docker Hub Repository to Openshift's Internal registry ( Kindly avoid importing additional images to avoid exhausting the docker limit )
 ```
 docker login
 
