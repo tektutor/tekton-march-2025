@@ -204,4 +204,17 @@ curl http://192.168.100.25:8080
 Expected output
 ![image](https://github.com/user-attachments/assets/ba15f75e-d035-406a-8159-a6348596d3f4)
 
+## Lab - Deploying an application from existing imagestream
+```
+oc get imagestreams
+oc new-app hello-microservice:latest
+oc expose svc/hello-microservice
+oc get routes
+curl http://hello-microservice-jegan.apps.ocp4.alchemy.com
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/4231bbeb-8081-4741-aec1-da3af62fd466)
+![image](https://github.com/user-attachments/assets/9e98a3e4-4e59-429a-8775-927760f7bd37)
+![image](https://github.com/user-attachments/assets/83fa3a28-cd7c-4588-918d-a00b91aeb793)
 
