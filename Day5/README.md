@@ -164,5 +164,6 @@ To find a range of IP address that is not in use, let's run the below command
 oc get nodes -o wide
 ```
 ![image](https://github.com/user-attachments/assets/b14817cb-e83b-4de1-9a56-0134510dde4d)
+![image](https://github.com/user-attachments/assets/8e9a514a-e861-46cc-8d5a-2560ad2ffbac)
 
 
