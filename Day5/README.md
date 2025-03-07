@@ -79,4 +79,16 @@ Click on "Container images"
 ![image](https://github.com/user-attachments/assets/1ee57a65-cf22-4728-96a0-08983a6c08d4)
 Select "Image stream tag from Internal registry"
 ![image](https://github.com/user-attachments/assets/3430a73f-f001-4d60-9860-89fea7b65e5f)
+Select the Project from which you wish to choose the Imagestream, 
+Select the Image stream name and tag
+![image](https://github.com/user-attachments/assets/fcebc5fd-30bb-40a1-9a02-e999832f4879)
+Scroll down, make the "Create a route" checkbox is selected
+![image](https://github.com/user-attachments/assets/df961003-ee77-401a-99ca-28cd587c3f62)
+Click "Create" button
+![image](https://github.com/user-attachments/assets/2429d77f-566f-4829-8276-cf1a1e9e7fbe)
+![image](https://github.com/user-attachments/assets/a47a268d-6e6f-4a72-b2bf-4ee8d311074e)
+Click the "Up arrow"
+![image](https://github.com/user-attachments/assets/716453cf-999a-46ad-90f1-9a79c42795c1)
+![image](https://github.com/user-attachments/assets/e0e5584b-059e-433d-bb84-d331a0a9ae10)
+
 
