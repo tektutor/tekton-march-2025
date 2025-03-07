@@ -8,6 +8,7 @@ oc create secret generic docker-pullsecret --from-file=.dockerjsonfile=/root/.do
 
 oc import-image bitnami/nginx:latest bitnami/nginx:latest docker.io/library/bitnami/nginx:latest --confirm
 
+oc get images
 ```
 
 Expected output
@@ -16,3 +17,4 @@ Expected output
 ![output](img2.png)
 ![output](img3.png)
 ![output](img4.png)
+![output](img6.png)
