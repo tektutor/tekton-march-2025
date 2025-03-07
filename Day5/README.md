@@ -128,4 +128,13 @@ Expected output
 ![image](https://github.com/user-attachments/assets/7c5f8b41-41e7-4474-baae-a32f7703def3)
 ![image](https://github.com/user-attachments/assets/030412a1-a3eb-42f6-a143-9dc34d525bae)
 
+## Demo - Installing Metallb operator to support LoadBalancer service in on-prem(bare-metal) openshift setup
+Navigate to Openshift Dashboard as an Administrator
+![image](https://github.com/user-attachments/assets/94005f06-8a10-4abf-bdb1-5f4c8878ce42)
+Click "Operators" on the left side menu
+![image](https://github.com/user-attachments/assets/905882b8-fd72-4c48-bbb0-78343c82d921)
+Select "Operator Hub"
+![image](https://github.com/user-attachments/assets/1bcfebb0-32aa-4ffd-86eb-433db0f186a6)
+Search "Metal"
+![image](https://github.com/user-attachments/assets/16af6666-a6f5-4d2d-83e2-5f7ed08679a0)
 
