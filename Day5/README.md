@@ -19,3 +19,8 @@ Expected output
 ![output](img4.png)
 ![output](img6.png)
 ![output](img7.png)
+
+For more details, you may also refer official documentation here
+<pre>
+https://access.redhat.com/solutions/2072843  
+</pre>
