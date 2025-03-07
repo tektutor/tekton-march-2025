@@ -48,3 +48,11 @@ oc new-app https://github.com/tektutor/hello-microservice.git --strategy=docker
 oc project jegan
 oc new-app https://github.com/tektutor/hello-microservice.git --strategy=source
 ```
+
+Expected output
+![image](https://github.com/user-attachments/assets/805ff747-7441-472a-967d-3758478ce8b5)
+![image](https://github.com/user-attachments/assets/dd6db220-76a1-4dff-9afd-603028edc62c)
+![image](https://github.com/user-attachments/assets/a333bc45-2b8c-4be6-883e-e28defbf5b4d)
+![image](https://github.com/user-attachments/assets/dcd86cb2-59e2-40f5-afc9-8697d311c372)
+![image](https://github.com/user-attachments/assets/fe8036e0-945f-4652-987c-691d1cd40c0d)
+
