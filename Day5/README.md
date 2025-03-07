@@ -189,3 +189,19 @@ curl http://192.168.100.25:8080
 ```
 ![image](https://github.com/user-attachments/assets/15e1e1bf-3975-4fae-928d-db94e03c7274)
 
+## Lab - Creating a LoadBalancer service
+In the below command, the IP 192.168.100.25 must be replaced with the external IP assigned to your Loadbalancer service, when you issue the oc get svc command.
+```
+oc project jegan
+oc new-app --name=hello --image=image-registry.openshift-image-registry.svc:5000/jegan/hello-microservice
+oc delete service/hello
+oc expose deploy/hello --type=LoadBalancer --port=8080
+oc get svc
+oc expose svc/hello
+curl http://192.168.100.25:8080
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/ba15f75e-d035-406a-8159-a6348596d3f4)
+
+
