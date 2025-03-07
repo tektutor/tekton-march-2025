@@ -46,7 +46,7 @@ oc new-app https://github.com/tektutor/hello-microservice.git --strategy=docker
 
 ```
 oc project jegan
-oc new-app https://github.com/tektutor/hello-microservice.git --strategy=source
+oc new-app --name=hello https://github.com/tektutor/hello-microservice.git --strategy=source
 ```
 
 Expected output
