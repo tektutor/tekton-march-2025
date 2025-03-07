@@ -218,3 +218,14 @@ Expected output
 ![image](https://github.com/user-attachments/assets/9e98a3e4-4e59-429a-8775-927760f7bd37)
 ![image](https://github.com/user-attachments/assets/83fa3a28-cd7c-4588-918d-a00b91aeb793)
 
+## Lab- Deploying an application into openshift in declarative sytle ( using yaml file - manifests ) 
+```
+oc create deployment hello --image=tektutor/hello:latest --dry-run=client -o yaml
+oc create deployment hello --image=tektutor/hello:latest --dry-run=client -o yaml > hello-deploy.yml
+oc set image-lookup hello
+oc set image-lookup deploy/hello
+oc create -f hello-deploy.yml
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/3d3d5af4-e5ee-475f-b3d0-8f44d1f57ba3)
