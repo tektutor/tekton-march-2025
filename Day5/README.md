@@ -91,4 +91,35 @@ Click the "Up arrow"
 ![image](https://github.com/user-attachments/assets/716453cf-999a-46ad-90f1-9a79c42795c1)
 ![image](https://github.com/user-attachments/assets/e0e5584b-059e-433d-bb84-d331a0a9ae10)
 
+## Lab - Creating a NodePort external service
+```
+oc project jegan
+oc new-app --name=hello --image=image-registry.openshift-image-registry.svc:5000/jegan/hello-microservice
+oc get po
+oc scale deploy/hello --replicas=3
+oc get po
+
+```
+Expected output
+![image](https://github.com/user-attachments/assets/22b8a355-691a-47f1-8bfb-34eb612662d9)
+![image](https://github.com/user-attachments/assets/4c1ccfc2-70e7-4928-b787-b0c18bd33565)
+![image](https://github.com/user-attachments/assets/4e0a8697-1395-46b4-9a0c-96e3b1e4559c)
+
+Let's create the external node-port service
+```
+oc get svc
+oc delete svc/hello
+oc expose deploy/hello --port=8080 --type=NodePort
+oc get services
+oc describe service/hello
+oc get nodes -o wide
+curl http://192.168.100.11:30397
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/b2aa467d-76f5-4ba8-a52b-d3642cc0afdf)
+![image](https://github.com/user-attachments/assets/f5d8a961-834a-4b32-83ed-e736e85e0cc5)
+![image](https://github.com/user-attachments/assets/a7917077-35f8-449f-82b3-67aaace7acb5)
+![image](https://github.com/user-attachments/assets/21d3c123-7ea3-4f6f-b57f-5011110f628b)
+
 
