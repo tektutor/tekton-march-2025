@@ -165,5 +165,27 @@ oc get nodes -o wide
 ```
 ![image](https://github.com/user-attachments/assets/b14817cb-e83b-4de1-9a56-0134510dde4d)
 ![image](https://github.com/user-attachments/assets/8e9a514a-e861-46cc-8d5a-2560ad2ffbac)
+Click "Create"
+![image](https://github.com/user-attachments/assets/ee1ef470-e825-4ce0-aa3d-3a5285fd30ea)
+Click "Details"
+![image](https://github.com/user-attachments/assets/254280cd-a4a8-491c-967d-1f4ab6eabcd2)
+Look for "Metalb" and click "Create Instance"
+![image](https://github.com/user-attachments/assets/e41522df-85d6-4372-ac50-4c44ce83a530)
+![image](https://github.com/user-attachments/assets/f7303656-aad7-41ba-a75d-ce41a108d063)
+Accept the default and click "Create"
+Try to check the loadbalancer service we created to note the external IP allocated by Metallb operaror.
+```
+oc get svc
+```
+![image](https://github.com/user-attachments/assets/e5b0260f-a5de-4a2c-86cb-997c6767a8a0)
 
+Make sure, your project namespace is selected as "metallb-system", We need to "Create Instance" for L2 Advertisement and provide the IPaddressPool name ie "ip-addresspool-metal"
+![image](https://github.com/user-attachments/assets/accb544c-9994-4e94-a02c-c6b066df705a)
+Click "Create"
+
+Now one should be able to access the loadbalancer service as shown below
+```
+curl http://192.168.100.25:8080
+```
+![image](https://github.com/user-attachments/assets/15e1e1bf-3975-4fae-928d-db94e03c7274)
 
