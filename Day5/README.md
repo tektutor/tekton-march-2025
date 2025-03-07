@@ -72,3 +72,11 @@ Expected output
 ![image](https://github.com/user-attachments/assets/dcd86cb2-59e2-40f5-afc9-8697d311c372)
 ![image](https://github.com/user-attachments/assets/fe8036e0-945f-4652-987c-691d1cd40c0d)
 
+## Lab - Deploying an application into openshift using existing images that we stored in Openshift Internal Image Registry
+Navigate to Openshift Developer context as shown below, Click +Add on the left side menu
+![image](https://github.com/user-attachments/assets/4c956874-c246-4eda-8454-0950fec694e7)
+Click on "Container images"
+![image](https://github.com/user-attachments/assets/1ee57a65-cf22-4728-96a0-08983a6c08d4)
+Select "Image stream tag from Internal registry"
+![image](https://github.com/user-attachments/assets/3430a73f-f001-4d60-9860-89fea7b65e5f)
+
