@@ -114,6 +114,10 @@ oc get services
 oc describe service/hello
 oc get nodes -o wide
 curl http://192.168.100.11:30397
+curl http://192.168.100.12:30397
+curl http://192.168.100.13:30397
+curl http://192.168.100.22:30397
+curl http://192.168.100.23:30397
 ```
 
 Expected output
@@ -122,5 +126,6 @@ Expected output
 ![image](https://github.com/user-attachments/assets/a7917077-35f8-449f-82b3-67aaace7acb5)
 ![image](https://github.com/user-attachments/assets/21d3c123-7ea3-4f6f-b57f-5011110f628b)
 ![image](https://github.com/user-attachments/assets/7c5f8b41-41e7-4474-baae-a32f7703def3)
+![image](https://github.com/user-attachments/assets/030412a1-a3eb-42f6-a143-9dc34d525bae)
 
 
