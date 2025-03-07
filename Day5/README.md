@@ -24,3 +24,27 @@ For more details, you may also refer official documentation here
 <pre>
 https://access.redhat.com/solutions/2072843  
 </pre>
+
+## Lab - Deploying application into Openshift using docker strategy
+<pre>
+- In case of docker strategy, openshift will expect for Dockerfile in your GitHub repository.  
+- Openshift will use the Dockerfile to perform the application and image build.
+</pre>
+
+```
+oc project jegan
+oc new-app https://github.com/tektutor/hello-microservice.git --strategy=docker
+```
+
+## Lab - Deploying application into Openshift using source strategy
+<pre>
+- In case of source strategy, openshift will not expect you to provide Dockerfile in your GitHub repository. 
+- Even if there is Dockerfile in the repository, Openshift will generate a Dockerfile with the image name you suggested in the oc new-app command.  
+- Openshift will use the Dockerfile to perform the application and image build.
+</pre>
+
+
+```
+oc project jegan
+oc new-app https://github.com/tektutor/hello-microservice.git --strategy=source
+```
