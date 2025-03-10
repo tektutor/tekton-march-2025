@@ -310,4 +310,23 @@ Build running
 ![image](https://github.com/user-attachments/assets/cab9a867-fb84-4f72-a2e6-cf99a2af748c)
 ![image](https://github.com/user-attachments/assets/50c80ab4-f697-4734-825a-4a98817db66f)
 
+## Lab - Deploying sample application from Developer Catalog ( multi-pod application deployment )
+![image](https://github.com/user-attachments/assets/76f3760a-fe8c-4935-a509-884c2b5ad215)
+Click +Add
+Select "Developer Catalog" --> All Services
+![image](https://github.com/user-attachments/assets/322b0779-2a4d-49a2-8774-7fac00c53fc1)
+Scroll down, Select "Django + Postgres (Ephemeral)" Template
+![image](https://github.com/user-attachments/assets/306da52c-4fac-4e9a-b602-14664effa475)
+Click "Instantiate Template"
+![image](https://github.com/user-attachments/assets/3d5d8dab-50f1-416e-986c-09c7fd5c530a)
+Accept all defaults and scroll down
+![image](https://github.com/user-attachments/assets/ff3ea35d-7ad1-4d78-84ce-184a6246d335)
+Click "Create" button
+![image](https://github.com/user-attachments/assets/3b57744b-eed4-40e1-98e1-795a61ed3f64)
+Build Progress
+![image](https://github.com/user-attachments/assets/3738a69c-989d-4a89-9b93-5a6c813760b7)
+![image](https://github.com/user-attachments/assets/b5b7921a-53f7-45f4-b9c5-74a9df78dbfb)
+![image](https://github.com/user-attachments/assets/4543de7c-eb80-437c-827a-92ccd1e8367e)
+![image](https://github.com/user-attachments/assets/ad060a37-e52f-42a6-9010-f2da52b249fa)
+![image](https://github.com/user-attachments/assets/e8588192-b67b-4c42-9912-7adcf428f2bc)
 
