@@ -286,3 +286,28 @@ oc get crds | grep tekton
 Expected output
 ![image](https://github.com/user-attachments/assets/b50fea55-cc0e-4622-a0b0-92324ca60357)
 
+## Lab - Deploying an application from Openshift Webconsole in Developer login
+Navigate to Red Hat Openshift webconsole as a Developer
+![image](https://github.com/user-attachments/assets/284e39c0-9671-41ff-90fe-1dfbdb712d66)
+Click +Add
+![image](https://github.com/user-attachments/assets/f92156bd-2d82-40d2-b12f-1fa58fc53534)
+Under the "Get started resources", click "View all samples"
+![image](https://github.com/user-attachments/assets/43c3d5ed-82f0-434f-b760-0bbd39ec56f5)
+![image](https://github.com/user-attachments/assets/61e54a41-d805-40a0-b4b0-7a23d49b4b24)
+Select "Basic Nodejs"
+![image](https://github.com/user-attachments/assets/2e43ed2a-04e5-415b-9f7e-0b926dfab8be)
+Wait until the "Create" button gets enabled
+![image](https://github.com/user-attachments/assets/d5ead3f4-c4b6-4557-a6ad-b0d86ebde76b)
+![image](https://github.com/user-attachments/assets/28ea382d-e79a-466f-8865-0040e772dd0b)
+Click "Create" button
+![image](https://github.com/user-attachments/assets/fcee94c0-d3b8-44db-944b-257ac86013ca)
+Build running
+![image](https://github.com/user-attachments/assets/0ab3b7e7-98f3-4f64-9184-313e31210ebb)
+![image](https://github.com/user-attachments/assets/7342541b-cc36-497d-bf45-c18f87f59d2a)
+![image](https://github.com/user-attachments/assets/9722089a-7dd2-40ea-8efb-953ebc89514b)
+![image](https://github.com/user-attachments/assets/45b149c6-9ab8-465d-8158-6442b115a556)
+![image](https://github.com/user-attachments/assets/3b81302c-1330-41ee-95e3-f29b871203dd)
+![image](https://github.com/user-attachments/assets/cab9a867-fb84-4f72-a2e6-cf99a2af748c)
+![image](https://github.com/user-attachments/assets/50c80ab4-f697-4734-825a-4a98817db66f)
+
+
