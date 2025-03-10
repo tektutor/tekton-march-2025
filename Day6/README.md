@@ -4,7 +4,7 @@
 In case you wish to generate the declarative manifest files yourself
 ```
 cd ~
-mkdir declartive-scripts
+mkdir declarative-scripts
 cd declarative-scripts
 
 oc create deployment nginx --image=bitnami/nginx:latest --replicas=3 -o yaml --dry-run=client
