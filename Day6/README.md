@@ -52,12 +52,15 @@ oc delete svc/nginx
 Let's create the nodeport service in declarative style(i.e using yaml file)
 ```
 oc get deployments
-oc expose deploy/nginx --port=8080 --type=NodePort
+oc expose deploy/nginx --port=8080 --type=NodePort -o yaml --dry-run=client
+oc expose deploy/nginx --port=8080 --type=NodePort -o yaml --dry-run=client > nginx-nodeport-service.yml
+oc create -f nginx-nodeport-service.yml --save-config
 oc get services
 oc describe service/nginx
 curl http://192.168.100.11:31673
 ```
 
 Expected output
-![image](https://github.com/user-attachments/assets/417598f1-daf5-420d-9e77-6ac2b455cc4c)
-![image](https://github.com/user-attachments/assets/5c80a827-be18-499f-b542-59ef20013291)
+![image](https://github.com/user-attachments/assets/70142571-6163-4677-9d70-5fde33383d5b)
+![image](https://github.com/user-attachments/assets/35d4a84d-3358-46e3-9ad1-df69a11047b1)
+![image](https://github.com/user-attachments/assets/29dca678-7e46-48f2-b10c-367ace7ea2d6)
