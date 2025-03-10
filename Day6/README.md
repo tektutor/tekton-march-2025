@@ -137,3 +137,21 @@ Expected output
 - For sophisticated deployment strategy like blue-green, canary you could use Istio Service Mesh
 - Istio Service Mesh also supports network policies
 </pre>
+
+## Info - Openshift Controllers
+<pre>
+- Controller manage resources in Kubernetes & Openshift
+- each controller monitors and manages one type of Resource
+- For example
+  - Deployment Controller manages Deployment resource
+  - ReplicaSet controller manages ReplicaSet resource
+- Kubernetes/Openshift allows us to extend the Kubernetes/Openshift features(REST API) by definining a Custom Resource Definition (CRD)
+- To manage your custom resource, you also must supply a Custom Controller
+- Many Custom Resources and many Custom Controller can packaged as Operators and deployed into Openshift
+- i.e we can add new functionalities to Openshift using Openshift Operators
+- Kubernetes Operator Framework can be used to develop your own custom Operators using Golang, Ansible or Helm package manager
+- Operators can be developed using
+  - Golang programming language as Kubernetes/Openshift is implemented in Golang
+  - Ansible we could develop Openshift operators
+  - Helm package manager also supports some limited set of custom operators
+</pre>
