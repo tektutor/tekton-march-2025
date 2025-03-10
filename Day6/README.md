@@ -42,3 +42,22 @@ Expected output
 ![image](https://github.com/user-attachments/assets/cd814c43-aca7-4d2a-9afc-a687fe365fbf)
 ![image](https://github.com/user-attachments/assets/a66406dc-1181-4286-bb05-9fe7743b2edd)
 
+## Lab - Declaratively create nodeport external service
+
+We need to delete the clusterip internal service
+```
+oc delete svc/nginx
+```
+
+Let's create the nodeport service in declarative style(i.e using yaml file)
+```
+oc get deployments
+oc expose deploy/nginx --port=8080 --type=NodePort
+oc get services
+oc describe service/nginx
+curl http://192.168.100.11:31673
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/417598f1-daf5-420d-9e77-6ac2b455cc4c)
+![image](https://github.com/user-attachments/assets/5c80a827-be18-499f-b542-59ef20013291)
