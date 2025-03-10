@@ -155,3 +155,60 @@ Expected output
   - Ansible we could develop Openshift operators
   - Helm package manager also supports some limited set of custom operators
 </pre>
+
+## Lab - Creating a Custom resource called Training using CRD
+
+Create a yaml file named training-crd.yml
+```
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  name: trainings.tektutor.org 
+spec:
+  group: tektutor.org 
+  scope: Namespaced
+  names:
+    kind: Training 
+    listKind: TrainingList
+    plural: trainings 
+    singular: training 
+    shortNames:
+    - train 
+
+  versions:
+    - name: v1
+      served: true
+      storage: true 
+      schema:
+        openAPIV3Schema:
+          type: object
+          properties:
+              training:
+                type: string
+              duration:
+                type: string
+              city:
+                type: string
+              from:
+                type: string
+              to:
+                type: string
+```
+
+Now you can run the below command
+```
+oc get trainings
+oc get training
+oc get train
+```
+
+Let's create the Custom Resource called Training in Openshift
+```
+oc create -f training-crd.yml  --save-config
+
+oc get trainings
+oc get training
+oc get train
+```
+
+Expected output
