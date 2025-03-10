@@ -86,3 +86,38 @@ curl http://192.168.100.25:8080
 Expected output
 ![image](https://github.com/user-attachments/assets/d37e8bf8-b72d-420c-8092-0924ee01d49c)
 ![image](https://github.com/user-attachments/assets/cc039e5a-ed3e-408b-886e-d0ba5b5632c3)
+
+
+## Lab - Understanding rolling update ( upgrading live applcation from one version to other without downtime )
+```
+cat nginx-deploy.yml
+oc create -f nginx-deploy.yml
+oc get pods
+oc get pods -o yaml | grep 1.26
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/91bea36f-9953-4b1d-91e7-988f318a12f6)
+![image](https://github.com/user-attachments/assets/1f3cdda7-18cb-44bb-9392-151438fcf6f7)
+![image](https://github.com/user-attachments/assets/4607eaa8-3627-40f3-a311-92c3491bb43c)
+![image](https://github.com/user-attachments/assets/2723bab1-ac11-438a-bca1-ab97227451d8)
+
+Let's upgrade the nginx image from 1.26 to 1.27 as shown below
+```
+vim nginx-deploy.yml
+cat nginx-deploy.yml
+oc get rs
+oc apply -f nginx-deploy.yml
+oc get rs,po
+oc rollout status deploy/nginx
+oc get po -o yaml | grep 1.27
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/fc7fdcdd-0449-473f-b9a9-f8f45a6d3dd7)
+![image](https://github.com/user-attachments/assets/7ff5a092-6d2f-4939-b8e3-abbc4caeb6b6)
+![image](https://github.com/user-attachments/assets/d3d96089-e9eb-4b50-b692-d5250172cb05)
+
+Rollback
+```
+```
