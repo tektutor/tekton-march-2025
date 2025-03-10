@@ -330,3 +330,9 @@ Build Progress
 ![image](https://github.com/user-attachments/assets/ad060a37-e52f-42a6-9010-f2da52b249fa)
 ![image](https://github.com/user-attachments/assets/e8588192-b67b-4c42-9912-7adcf428f2bc)
 
+In this multi-pod application, "django-psql-example" is the frontend application developed using Python and Django Web Framework.
+The Django frontend application is connecting to the postgres db pod via the Postgress service name, the postgres service is routing the call to Postgres pod.
+![image](https://github.com/user-attachments/assets/dab2c436-eb9e-40a8-a8ff-f403a1c6edfe)
+![image](https://github.com/user-attachments/assets/9208798f-314a-4745-85e9-bdd43556d30a)
+![image](https://github.com/user-attachments/assets/ec40e783-5feb-4f6d-a39e-8c280d9cbf4c)
+![image](https://github.com/user-attachments/assets/a2dc3177-31cc-4d85-b5bb-a9f23f91cea0)
