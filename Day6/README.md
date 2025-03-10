@@ -336,3 +336,35 @@ The Django frontend application is connecting to the postgres db pod via the Pos
 ![image](https://github.com/user-attachments/assets/9208798f-314a-4745-85e9-bdd43556d30a)
 ![image](https://github.com/user-attachments/assets/ec40e783-5feb-4f6d-a39e-8c280d9cbf4c)
 ![image](https://github.com/user-attachments/assets/a2dc3177-31cc-4d85-b5bb-a9f23f91cea0)
+
+## Info - What is Persistent Volume(PV) ?
+<pre>
+- Persistent Volume is an external storage for any application that would like to store application logs, application data, etc in an external storage
+- Why we must use external storage, instead of Pod storage is, when Pod is deleted the data also gets deleted
+- Persistent Volume can make use of the NFS Storage or AWS EBS, S3, any external storage services, etc.,
+- Persistent Volumes defines the below attributes
+  - name of the persistent volume
+  - storage size
+  - type of storage
+  - permission, read, write, etc.,
+  - storageclass - optional
+</pre>
+
+## Info - What is Persistent Volume Claim(PVC) ?
+<pre>
+- Persistent Volume Claim is the way any openshift application can request for external storage
+- Persistent Voulem Clam also defines the below attributes
+  - name of the Persistent Volume Claim
+  - storage size
+  - type of storage
+  - storage access permissions
+  - storageclass - optional
+</pre>
+
+## Info - How application gets their external storage
+<pre>
+- Openshift/Kubernetes application Pod will request for external storage using PVC 
+- Openshift will scan the openshift cluster looking for a matching PV, if Openshift is able to find a matching PV for the PVC request then Openshift will let the PVC claim and use the PV
+- In case, for the PVC criteria(requirement), Openshift is not able to find a matching PV, then the PVC will remain in Pending state
+- Until the Pod requested for PVC, gets a matching PV, the Pod will be kept in the Pending state
+</pre>
