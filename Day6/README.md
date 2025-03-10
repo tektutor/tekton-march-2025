@@ -212,3 +212,51 @@ oc get train
 ```
 
 Expected output
+
+
+Let's create devops-training.yml as shown below
+```
+apiVersion: tektutor.org/v1
+kind: Training 
+metadata:
+  name: devops-training 
+spec:
+  training: "Advanced DevOps"
+  duration: "5 Days" 
+  city: "Bengaluru"
+  from: "4th July 2025"
+  to: "8th July 2025"
+```
+
+Let's create the devops training
+```
+oc create -f devops-training.yml --save-config
+```
+
+Let's create openshift-training as shown below
+```
+
+apiVersion: tektutor.org/v1
+kind: Training 
+metadata:
+  name: devops-training 
+spec:
+  training: "Advanced Tekton"
+  duration: "5 Days" 
+  city: "Bengaluru"
+  from: "4th July 2025"
+  to: "8th July 2025"
+```
+
+Let's run the below command
+```
+oc create -f openshift-training.yml --save-config
+```
+
+Listing the trainings
+```
+oc get trainings
+oc get training
+oc get train
+oc describe train/devops-training
+```
