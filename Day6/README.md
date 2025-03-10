@@ -25,3 +25,20 @@ oc get deploy,rs,po
 Expected output
 ![image](https://github.com/user-attachments/assets/745e27c8-d24e-4bcc-a582-2fd1ce2f2fdb)
 
+## Lab - Declaratively creating clusterip internal service
+```
+oc project jegan
+oc get deployments
+
+oc expose deploy/nginx --port=8080 --type=ClusterIP -o yaml --dry-run=client
+oc expose deploy/nginx --port=8080 --type=ClusterIP -o yaml --dry-run=client > nginx-clusterip-service.yml
+
+oc create -f nginx-clusterip-service.yml --save-config
+oc get services
+oc describe svc/nginx
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/cd814c43-aca7-4d2a-9afc-a687fe365fbf)
+![image](https://github.com/user-attachments/assets/a66406dc-1181-4286-bb05-9fe7743b2edd)
+
