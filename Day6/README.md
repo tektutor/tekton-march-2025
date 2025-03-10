@@ -279,3 +279,10 @@ Click "Install"
 ![image](https://github.com/user-attachments/assets/11c8a11c-5056-4d26-8544-9e7c42735b51)
 ![image](https://github.com/user-attachments/assets/2b46429c-750f-471e-a0fb-0c0e18240b66)
 
+The Red Hat Openshift Pipelines Operators adds the below TekTon Custom Resources
+```
+oc get crds | grep tekton
+```
+Expected output
+![image](https://github.com/user-attachments/assets/b50fea55-cc0e-4622-a0b0-92324ca60357)
+
