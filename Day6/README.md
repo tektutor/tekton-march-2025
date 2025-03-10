@@ -64,3 +64,25 @@ Expected output
 ![image](https://github.com/user-attachments/assets/70142571-6163-4677-9d70-5fde33383d5b)
 ![image](https://github.com/user-attachments/assets/35d4a84d-3358-46e3-9ad1-df69a11047b1)
 ![image](https://github.com/user-attachments/assets/29dca678-7e46-48f2-b10c-367ace7ea2d6)
+
+
+## Lab - Creating a LoadBalancer service for nginx deployment in declarative style using yaml 
+Let's delete the nodeport service in declarative style
+```
+oc project jegan
+oc delete -f nginx-nodeport-service.yml
+```
+
+Let's create a loadbalancer service for nginx deployment
+```
+oc project jegan
+oc get deployments
+oc expose deploy/nginx --type=LoadBalancer --port=8080 -o yaml --dry-run=client > nginx-lb-service.yml
+oc create -f nginx-lb-service.yml
+oc get svc
+curl http://192.168.100.25:8080
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/d37e8bf8-b72d-420c-8092-0924ee01d49c)
+![image](https://github.com/user-attachments/assets/cc039e5a-ed3e-408b-886e-d0ba5b5632c3)
