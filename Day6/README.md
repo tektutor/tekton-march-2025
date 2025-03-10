@@ -353,7 +353,7 @@ The Django frontend application is connecting to the postgres db pod via the Pos
 ## Info - What is Persistent Volume Claim(PVC) ?
 <pre>
 - Persistent Volume Claim is the way any openshift application can request for external storage
-- Persistent Voulem Clam also defines the below attributes
+- Persistent Voulem Claim also defines the below attributes
   - name of the Persistent Volume Claim
   - storage size
   - type of storage
