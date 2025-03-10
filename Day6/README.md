@@ -260,3 +260,22 @@ oc get training
 oc get train
 oc describe train/devops-training
 ```
+
+## Demo - Installing Tekton Operator in Openshift ( Only a Red Hat Openshift Administrator can do this one time activity )
+Navigate to Red Hat Openshift Web console, Administrator context
+![image](https://github.com/user-attachments/assets/4aec75f5-b3c0-4fb0-abd1-f35ff8239bb0)
+Navigate to Operators --> Operator Hub
+![image](https://github.com/user-attachments/assets/84331f1f-3c1d-4a0f-a586-471a49b0ada3)
+Search for "TekTon"
+![image](https://github.com/user-attachments/assets/781b6bf3-b194-4d9b-b00f-17b6ed8a6bbe)
+Select "Red Hat Openshift Pipelines"
+![image](https://github.com/user-attachments/assets/a4d6135b-bb0f-4cbe-9f1f-8a286d56ccf6)
+Click "Install"
+![image](https://github.com/user-attachments/assets/3da88d1a-4f67-469a-b618-1757df89b924)
+Accept all the defaults
+![image](https://github.com/user-attachments/assets/c049e692-2787-40ac-92b1-051aed0c5ec3)
+![image](https://github.com/user-attachments/assets/294b9afa-b437-42e9-9011-c6922270f00a)
+Click "Install"
+![image](https://github.com/user-attachments/assets/11c8a11c-5056-4d26-8544-9e7c42735b51)
+![image](https://github.com/user-attachments/assets/2b46429c-750f-471e-a0fb-0c0e18240b66)
+
