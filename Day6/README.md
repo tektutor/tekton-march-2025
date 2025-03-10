@@ -118,6 +118,22 @@ Expected output
 ![image](https://github.com/user-attachments/assets/7ff5a092-6d2f-4939-b8e3-abbc4caeb6b6)
 ![image](https://github.com/user-attachments/assets/d3d96089-e9eb-4b50-b692-d5250172cb05)
 
-Rollback
+Rollback due to some issue with the recently deployment version of your application
 ```
+oc get po -o yaml | grep image
+oc rollout undo deploy/nginx
+oc rollout status deploy/nginx
+oc get po -o yaml | grep image
+oc rollout history deploy/nginx
 ```
+
+Expected output
+![image](https://github.com/user-attachments/assets/e847522c-ba23-4db7-9789-5754461c8f07)
+![image](https://github.com/user-attachments/assets/1715adb9-5d83-4a0c-83bc-cb6babf3920a)
+
+
+## Info - Istio Service Mesh
+<pre>
+- For sophisticated deployment strategy like blue-green, canary you could use Istio Service Mesh
+- Istio Service Mesh also supports network policies
+</pre>
