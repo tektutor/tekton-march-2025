@@ -27,7 +27,7 @@
 ## Tekton 
 <pre>
 - is a serverless CI/CD Framework
-- runs with Kubernetes/Openshift
+- runs within Kubernetes/Openshift
 - it is knative serverless CI/CD Framework
 - knative - means Kubernetes native framework, hence only works in Kubernetes and Openshift
 - this is an alternate to Jenkins or any server based CI/CD Build Servers
