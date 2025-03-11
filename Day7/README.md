@@ -24,6 +24,13 @@
 - the provisioned server will trigger build, reports the build status, and then the server will be disposed
 </pre>
 
+## Info - Custom Resource Definitions (CRD)
+<pre>
+- Using the Kubernetes CRD, Tekton Team has added many custom resources
+</pre>  
+![image](https://github.com/user-attachments/assets/a24f265d-22d2-4037-bd0b-0873ada4e06a)
+
+
 ## Tekton 
 <pre>
 - is a serverless CI/CD Framework
@@ -36,3 +43,4 @@
   - many Tekton custom resources
   - many Tekton custom controllers
 </pre>
+
