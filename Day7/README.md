@@ -31,4 +31,8 @@
 - it is knative serverless CI/CD Framework
 - knative - means Kubernetes native framework, hence only works in Kubernetes and Openshift
 - this is an alternate to Jenkins or any server based CI/CD Build Servers
+- Tekton team have developed the knative serverless CI/CD Framework as an Openshift/Kubenetes Operator
+- Tekton Operators comes with
+  - many Tekton custom resources
+  - many Tekton custom controllers
 </pre>
