@@ -7,7 +7,7 @@ spec:
     name: maven
   params:
   - name: CONTEXT_DIR
-    value: Day8/HelloMicroservice
+    value: Day8/hello-microservice
 
   - name: deleteExisting
     value: false
