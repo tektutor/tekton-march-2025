@@ -94,3 +94,20 @@
 cd ~
 git clone https://github.com/tektutor/tekton-march-2025.git
 ```
+
+## Lab - Creating and running your first Tekton Task
+```
+cd ~/tekton-march-2025
+git pull
+cd Day8/tekton
+cat first-tekton-task.yml
+oc apply -f first-tekton-task
+oc get taks
+tkn task list
+tkn task start helloworld-task
+tkn taskrun logs helloworld-task-run-xnn4j -f -n jegan
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/b8b95cf9-e759-4765-838b-7bf533fa43a0)
+![image](https://github.com/user-attachments/assets/4ebd983d-3f55-428c-8a09-0c31113ed8b5)
