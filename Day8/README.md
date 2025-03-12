@@ -248,3 +248,10 @@ Expected output
 ![image](https://github.com/user-attachments/assets/dc3db51f-ea7b-4333-ae01-52b05e09bc77)
 ![image](https://github.com/user-attachments/assets/85a32575-d22b-4d37-a749-d2727976e8e1)
 ![image](https://github.com/user-attachments/assets/335be265-7829-4164-bb32-0d07dc73dc34)
+![image](https://github.com/user-attachments/assets/f803ccc1-ee58-469c-83c7-2bc1f6900216)
+
+## Lab - Kindly delete the project after each exercise is completed
+```
+oc delete project jegan
+oc new-project jegan
+```
