@@ -201,5 +201,6 @@ oc apply -f clone.yml
 Expected output
 ![image](https://github.com/user-attachments/assets/a004d436-d489-4d18-b06d-53fd2d4b7c47)
 ![image](https://github.com/user-attachments/assets/861874dc-533c-4ff4-acd1-2ed6fec59eb1)
+![image](https://github.com/user-attachments/assets/99d536b2-1c93-47e3-aecc-ecc1a56730f7)
 ![image](https://github.com/user-attachments/assets/759b3930-b147-4216-a840-71ccdcf976b4)
 
