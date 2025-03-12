@@ -88,3 +88,9 @@
 - Openshift integrated the Tekton Dashboard within Openshift webconsole
 - in case of Kubernetes, Tekton provides an independent Tekton Dashboard that can be accessed outside the Kubernetes cluster
 </pre>
+
+## Lab - Cloning TekTutor Training Repository
+```
+cd ~
+git clone https://github.com/tektutor/tekton-march-2025.git
+```
