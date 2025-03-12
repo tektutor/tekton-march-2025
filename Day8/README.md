@@ -216,3 +216,35 @@ Expected output
 ![image](https://github.com/user-attachments/assets/99d536b2-1c93-47e3-aecc-ecc1a56730f7)
 ![image](https://github.com/user-attachments/assets/759b3930-b147-4216-a840-71ccdcf976b4)
 
+## Lab - Build a maven project using Tekton TaskRun
+```
+cd ~/tekton-march-2025
+git pull
+cd Day8/tekton
+cat maven-java-task.yml
+oc create -f maven-java-task.yml
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/3c1013b0-8d7a-4f19-9507-c2f225462ee8)
+![image](https://github.com/user-attachments/assets/193161b7-f20f-4bf7-81fd-304f0a0cf90b)
+
+As we haven't installed the Maven task, our TaskRun failed as it wasn't able to locate the Maven Task
+![image](https://github.com/user-attachments/assets/b6816176-a97b-4151-a519-ac3ef3a771d8)
+![image](https://github.com/user-attachments/assets/4126d52a-3506-4beb-98b3-2ad5b30c83e2)
+
+To fix this error, we need to first install the Maven Tekton Task into our Openshift project
+```
+oc project jegan
+tkn hub install task maven
+oc create -f maven-java-task.yml
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/f317180b-3be9-4655-acb1-1d53eba345dd)
+![image](https://github.com/user-attachments/assets/54391e37-2a48-4001-a919-a991558d1518)
+![image](https://github.com/user-attachments/assets/bc2d373e-40b4-4fe9-b3f1-ea85440a75a6)
+![image](https://github.com/user-attachments/assets/21d23e74-4158-4e44-b7b5-f1c039e0ed92)
+![image](https://github.com/user-attachments/assets/dc3db51f-ea7b-4333-ae01-52b05e09bc77)
+![image](https://github.com/user-attachments/assets/85a32575-d22b-4d37-a749-d2727976e8e1)
+![image](https://github.com/user-attachments/assets/335be265-7829-4164-bb32-0d07dc73dc34)
