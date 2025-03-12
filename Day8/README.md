@@ -138,3 +138,19 @@ Expected output
 ![image](https://github.com/user-attachments/assets/a0fb4ed0-8db9-4fd6-aab2-e0686582f2fc)
 ![image](https://github.com/user-attachments/assets/05499b28-4a68-46af-9ebb-a5374c319bde)
 ![image](https://github.com/user-attachments/assets/7cdfc74d-219a-4071-93d5-8c42c52698fe)
+
+## Lab - Tasks with multiple steps
+```
+cd ~/tekton-march-2025
+git pull
+cd Day8/tekton
+cat tasks-with-multiple-steps.yml
+oc apply -f tasks-with-multiple-steps.yml
+tkn task list
+tkn task start task-with-multiple-steps --show-log
+tkn taskrun list
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/ff4308af-795f-4abc-b4b6-47cc77e8bcff)
+![image](https://github.com/user-attachments/assets/573cd1bd-86e2-44ab-becf-e5aa915e4532)
