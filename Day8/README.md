@@ -115,7 +115,26 @@ Expected output
 ## Lab - Tekton Client tool usage details
 ```
 tkn
+
+tkn tasks
+tkn task
+tkn t
+
+tkn taskruns
+tkn taskrun
+tkn tr
+
+tkn pipelines
+tkn pipeline
+tkn p
+
+tkn pipelineruns
+tkn pipelinerun
+tkn pr
 ```
 
 Expected output
 ![image](https://github.com/user-attachments/assets/3d3670ff-535d-4e36-86a0-ab13fc6ce58e)
+![image](https://github.com/user-attachments/assets/a0fb4ed0-8db9-4fd6-aab2-e0686582f2fc)
+![image](https://github.com/user-attachments/assets/05499b28-4a68-46af-9ebb-a5374c319bde)
+![image](https://github.com/user-attachments/assets/7cdfc74d-219a-4071-93d5-8c42c52698fe)
