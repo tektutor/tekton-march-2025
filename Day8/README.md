@@ -79,8 +79,11 @@
 
 ## Info - Tekton Catalog
 <pre>
-- Reusable Task and Pipeline Resources from a website
+- Reusable Task and Pipeline Resources from a website ( Tekton Hub - hub.tekton.dev )
 </pre>
+![image](https://github.com/user-attachments/assets/525e00d0-42a4-40b2-8eb7-763b0bdf6c5b)
+![image](https://github.com/user-attachments/assets/a758ff48-8d90-45e2-808e-b774b01039a8)
+
 
 ## Info - Tekton Dashboard
 <pre>
@@ -94,6 +97,15 @@
 https://hub.tekton.dev/
 </pre>
 ![image](https://github.com/user-attachments/assets/2fbcebb9-539d-4bfd-9777-a33626160208) 
+
+## Info - Tekton Workspace
+<pre>
+- is a folder where a Tekton Task can store the output
+- the output stored by a Task can be fed as an input to other Tasks in the Tekton Pipeline
+- For example
+  - Task 1 - Clone source code from GitHub Repo and stores it in the output workspaces ( external NFS path )
+  - Task 2 - Uses the already clone source and build the source using maven
+</pre>
 
 ## Lab - Cloning TekTutor Training Repository
 ```
@@ -185,3 +197,22 @@ tkn hub install task git-clone
 Expected output
 ![image](https://github.com/user-attachments/assets/a3c71d71-facb-43d6-8db6-d8d97ac02c9a)
 ![image](https://github.com/user-attachments/assets/12d4da30-da3f-4f2c-96b4-2ec26a22a53f)
+
+## Lab - Clone GitHub repo using Tekton TaskRun
+
+Make sure you are customizing the clone.yml replace 'jegan' with your name.   Also make sure the nfs server IP and the path is updated as per the folder allocated to you before proceeding.
+
+```
+cd ~/tekton-march-2025
+git pull
+cd Day8/tekton
+cat clone.yml
+oc apply -f clone.yml
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/a004d436-d489-4d18-b06d-53fd2d4b7c47)
+![image](https://github.com/user-attachments/assets/861874dc-533c-4ff4-acd1-2ed6fec59eb1)
+![image](https://github.com/user-attachments/assets/99d536b2-1c93-47e3-aecc-ecc1a56730f7)
+![image](https://github.com/user-attachments/assets/759b3930-b147-4216-a840-71ccdcf976b4)
+
