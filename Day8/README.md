@@ -249,6 +249,7 @@ Expected output
 ![image](https://github.com/user-attachments/assets/85a32575-d22b-4d37-a749-d2727976e8e1)
 ![image](https://github.com/user-attachments/assets/335be265-7829-4164-bb32-0d07dc73dc34)
 ![image](https://github.com/user-attachments/assets/f803ccc1-ee58-469c-83c7-2bc1f6900216)
+![image](https://github.com/user-attachments/assets/c2a8e3fd-3ca5-42a8-9948-9aa056313cca)
 
 ## Lab - Kindly delete the project after each exercise is completed
 ```
