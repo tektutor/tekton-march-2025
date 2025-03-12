@@ -89,6 +89,12 @@
 - in case of Kubernetes, Tekton provides an independent Tekton Dashboard that can be accessed outside the Kubernetes cluster
 </pre>
 
+## Info - Tekton Hub has many reusable Tasks and Pipeline code
+<pre>
+https://hub.tekton.dev/
+</pre>
+![image](https://github.com/user-attachments/assets/2fbcebb9-539d-4bfd-9777-a33626160208) 
+
 ## Lab - Cloning TekTutor Training Repository
 ```
 cd ~
