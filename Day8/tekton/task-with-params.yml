@@ -12,6 +12,7 @@ spec:
   steps:
   - name: echo
     image: ubuntu
+    imagePullPolicy: IfNotPresent
     command:
     - echo
     args:
