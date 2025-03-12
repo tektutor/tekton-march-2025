@@ -79,7 +79,7 @@
 
 ## Info - Tekton Catalog
 <pre>
-- Reusable Task and Pipeline Resources from a website
+- Reusable Task and Pipeline Resources from a website ( Tekton Hub - hub.tekton.dev )
 </pre>
 
 ## Info - Tekton Dashboard
