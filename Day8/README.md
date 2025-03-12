@@ -177,3 +177,11 @@ tkn task start hello-task-with-params --showlog
 Expected output
 ![image](https://github.com/user-attachments/assets/268102d1-7497-43a2-8b99-d188f0797626)
 ![image](https://github.com/user-attachments/assets/d57e3e00-bf13-4b91-8ae9-a21b764f56d0)
+
+## Lab - Installing Tasks from Tekton Hub to refer that from our TaskRun
+```
+tkn hub install task git-clone
+```
+Expected output
+![image](https://github.com/user-attachments/assets/a3c71d71-facb-43d6-8db6-d8d97ac02c9a)
+![image](https://github.com/user-attachments/assets/12d4da30-da3f-4f2c-96b4-2ec26a22a53f)
