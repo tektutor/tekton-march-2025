@@ -154,3 +154,5 @@ tkn taskrun list
 Expected output
 ![image](https://github.com/user-attachments/assets/ff4308af-795f-4abc-b4b6-47cc77e8bcff)
 ![image](https://github.com/user-attachments/assets/573cd1bd-86e2-44ab-becf-e5aa915e4532)
+![image](https://github.com/user-attachments/assets/d6397d01-4da2-4368-9f31-bc0be5461202)
+![image](https://github.com/user-attachments/assets/0f81c13d-2c97-4bba-82b3-eb1ec844ac75)
