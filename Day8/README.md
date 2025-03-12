@@ -185,3 +185,21 @@ tkn hub install task git-clone
 Expected output
 ![image](https://github.com/user-attachments/assets/a3c71d71-facb-43d6-8db6-d8d97ac02c9a)
 ![image](https://github.com/user-attachments/assets/12d4da30-da3f-4f2c-96b4-2ec26a22a53f)
+
+## Lab - Clone GitHub repo using Tekton TaskRun
+
+Make sure you are customizing the clone.yml replace 'jegan' with your name.   Also make sure the nfs server IP and the path is updated as per the folder allocated to you before proceeding.
+
+```
+cd ~/tekton-march-2025
+git pull
+cd Day8/tekton
+cat clone.yml
+oc apply -f clone.yml
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/a004d436-d489-4d18-b06d-53fd2d4b7c47)
+![image](https://github.com/user-attachments/assets/861874dc-533c-4ff4-acd1-2ed6fec59eb1)
+![image](https://github.com/user-attachments/assets/759b3930-b147-4216-a840-71ccdcf976b4)
+
