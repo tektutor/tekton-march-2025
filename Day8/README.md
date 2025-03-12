@@ -156,3 +156,18 @@ Expected output
 ![image](https://github.com/user-attachments/assets/573cd1bd-86e2-44ab-becf-e5aa915e4532)
 ![image](https://github.com/user-attachments/assets/d6397d01-4da2-4368-9f31-bc0be5461202)
 ![image](https://github.com/user-attachments/assets/0f81c13d-2c97-4bba-82b3-eb1ec844ac75)
+
+## Lab - Passing parameter to a Tekton Task
+```
+cd ~/tekton-march-2025
+git pull
+cd Day8/tekton
+cat task-with-params.yml
+oc apply -f task-with-params.yml
+tkn task list
+tkn task start hello-task-with-params --showlog
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/268102d1-7497-43a2-8b99-d188f0797626)
+![image](https://github.com/user-attachments/assets/d57e3e00-bf13-4b91-8ae9-a21b764f56d0)
