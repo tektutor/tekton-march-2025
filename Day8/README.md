@@ -98,6 +98,15 @@ https://hub.tekton.dev/
 </pre>
 ![image](https://github.com/user-attachments/assets/2fbcebb9-539d-4bfd-9777-a33626160208) 
 
+## Info - Tekton Workspace
+<pre>
+- is a folder where a Tekton Task can store the output
+- the output stored by a Task can be fed as an input to other Tasks in the Tekton Pipeline
+- For example
+  - Task 1 - Clone source code from GitHub Repo and stores it in the output workspaces ( external NFS path )
+  - Task 2 - Uses the already clone source and build the source using maven
+</pre>
+
 ## Lab - Cloning TekTutor Training Repository
 ```
 cd ~
