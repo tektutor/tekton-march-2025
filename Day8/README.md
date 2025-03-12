@@ -111,3 +111,11 @@ tkn taskrun logs helloworld-task-run-xnn4j -f -n jegan
 Expected output
 ![image](https://github.com/user-attachments/assets/b8b95cf9-e759-4765-838b-7bf533fa43a0)
 ![image](https://github.com/user-attachments/assets/4ebd983d-3f55-428c-8a09-0c31113ed8b5)
+
+## Lab - Tekton Client tool usage details
+```
+tkn
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/3d3670ff-535d-4e36-86a0-ab13fc6ce58e)
