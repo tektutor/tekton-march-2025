@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: alpine 
+  name: nginx
+spec:
+  replicas: 12
+  selector:
+    matchLabels:
+      app: alpine
+  template:
+    metata:
+      labels:
+        app: alpine
+    spec:
+      containers:
+      - name: alpine
+        image: alpine:latest
+        imagePullPolicy: IfNotPresent
+      imagePullSecrets:
+      - name: docker-pullsecret
