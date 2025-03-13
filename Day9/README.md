@@ -110,3 +110,19 @@ tkn task start steps-sharing-data --showlog
 ```
 Expected output
 ![image](https://github.com/user-attachments/assets/09575a61-e648-4a53-91b7-59053627f10c)
+
+## Lab - Tekton Task retrieves data from openshift secret
+```
+cd ~/tekton-march-2025
+git pull
+cd Day9/tekton
+cat task-with-configmap.yml
+oc apply -f sharing-data-between-steps-in-a-task.yml
+tkn task list
+tkn task start steps-sharing-data --showlog
+```
+Expected output
+![image](https://github.com/user-attachments/assets/cdad65a2-c6b9-4910-94f0-4ec35d2bc4a2)
+![image](https://github.com/user-attachments/assets/272b436d-eb64-42c7-a943-10cf783bcde7)
+![image](https://github.com/user-attachments/assets/7f74439b-2b76-4d34-aac6-09a54b7dfe78)
+![image](https://github.com/user-attachments/assets/5c6298b4-6b7c-4fa3-998f-46610fea8e9a)
