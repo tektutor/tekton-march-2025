@@ -33,3 +33,10 @@ Expected output
 ![image](https://github.com/user-attachments/assets/19ef6caf-c94a-4721-ba4e-84612b4e27e7)
 ![image](https://github.com/user-attachments/assets/c34a513c-747c-46c2-abe8-bd92a9f610e5)
 
+Running a pipeline
+```
+tkn pipeline start first-pipeline --showlog
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/786faaff-cbe5-4ebd-893e-281ebdce0ee0)
