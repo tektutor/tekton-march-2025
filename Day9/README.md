@@ -44,9 +44,11 @@ Expected output
 ### Note
 <pre>
 - Task1 
+  - for each Task, one Pod will be created
   - Creates one Pod with 2 containers 
   - as Task1 has 2 Steps, for each step one container will be created
 - Task2 
+  - for each Task, one Pod will be created
   - Creates one Pod with 3 containers 
   - as Task2 has 3 steps, for each step one conrtainer will be created
 </pre>
