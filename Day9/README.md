@@ -51,4 +51,5 @@ Expected output
   - for each Task, one Pod will be created
   - Creates one Pod with 3 containers 
   - as Task2 has 3 steps, for each step one conrtainer will be created
+- hence, first-pipline will create 2 Pods with total 5 containers
 </pre>
