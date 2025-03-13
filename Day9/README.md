@@ -53,3 +53,17 @@ Expected output
   - as Task2 has 3 steps, for each step one conrtainer will be created
 - hence, first-pipline will create 2 Pods with total 5 containers
 </pre>
+
+## Lab - Running our second pipline where Task is defined inline within the Pipeline
+```
+cd ~/tekton-march-2025
+git pull
+cd Day9/tekton
+cat second-pipeline.yml
+oc apply -f second-pipeline.yml
+tkn pipeline list
+tkn pipeline start second-pipeline --showlog
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/db4ebcd9-4f4c-445d-b43f-3319254c3d60)
