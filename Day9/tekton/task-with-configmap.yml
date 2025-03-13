@@ -16,7 +16,7 @@ spec:
     imagePullPolicy: IfNotPresent
     script: |
       #!/usr/bin/env bash
-      ls -ltra /var/config
+      ls -ltra /var/configmap
       printf '\n'
       cat /var/configmap/m2_home
       printf '\n'
