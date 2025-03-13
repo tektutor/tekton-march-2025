@@ -67,3 +67,21 @@ tkn pipeline start second-pipeline --showlog
 
 Expected output
 ![image](https://github.com/user-attachments/assets/db4ebcd9-4f4c-445d-b43f-3319254c3d60)
+
+## Lab - Running third pipeline with sequential and parallel tasks
+```
+cd ~/tekton-march-2025
+git pull
+cd Day9/tekton
+cat third-pipeline.yml
+oc apply -f third-pipeline.yml
+tkn pipeline list
+tkn pipeline start third-pipeline --showlog
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/893fea32-9774-4130-a9aa-0bbf59b25a32)
+![image](https://github.com/user-attachments/assets/797fab58-1705-42ee-bcfa-e7e676e872df)
+![image](https://github.com/user-attachments/assets/88b44f21-99ad-494e-8e28-7efb5ab15367)
+![image](https://github.com/user-attachments/assets/05df0a67-a71a-4852-a60e-67d5f910c265)
+
