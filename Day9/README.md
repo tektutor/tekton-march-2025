@@ -40,3 +40,13 @@ tkn pipeline start first-pipeline --showlog
 
 Expected output
 ![image](https://github.com/user-attachments/assets/786faaff-cbe5-4ebd-893e-281ebdce0ee0)
+
+### Note
+<pre>
+- Task1 
+  - Creates one Pod with 2 containers 
+  - as Task1 has 2 Steps, for each step one container will be created
+- Task2 
+  - Creates one Pod with 3 containers 
+  - as Task2 has 3 steps, for each step one conrtainer will be created
+</pre>
