@@ -13,6 +13,7 @@ metadata:
 spec:
   steps:
   - image: ubuntu
+    imagePullPolicy: IfNotPresent
     script: |
       #!/usr/bin/env bash
       ls -ltra /var/config
