@@ -78,10 +78,22 @@ oc apply -f third-pipeline.yml
 tkn pipeline list
 tkn pipeline start third-pipeline --showlog
 ```
-
 Expected output
 ![image](https://github.com/user-attachments/assets/893fea32-9774-4130-a9aa-0bbf59b25a32)
 ![image](https://github.com/user-attachments/assets/797fab58-1705-42ee-bcfa-e7e676e872df)
 ![image](https://github.com/user-attachments/assets/88b44f21-99ad-494e-8e28-7efb5ab15367)
 ![image](https://github.com/user-attachments/assets/05df0a67-a71a-4852-a60e-67d5f910c265)
 
+## Lab - Tekton Task with ConfigMap
+```
+cd ~/tekton-march-2025
+git pull
+cd Day9/tekton
+cat task-with-configmap.yml
+oc apply -f task-with-configmap.yml
+tkn task list
+tkn task start task-with-configmap --showlog
+```
+Expected output
+![image](https://github.com/user-attachments/assets/cbd7e1d1-840a-43dc-932e-d560520fbd4c)
+![image](https://github.com/user-attachments/assets/c3d7699c-aa26-4de6-be4c-5191ee9ca0f3)
