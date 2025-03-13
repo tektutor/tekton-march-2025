@@ -96,4 +96,4 @@ tkn task start task-with-configmap --showlog
 ```
 Expected output
 ![image](https://github.com/user-attachments/assets/cbd7e1d1-840a-43dc-932e-d560520fbd4c)
-![image](https://github.com/user-attachments/assets/c3d7699c-aa26-4de6-be4c-5191ee9ca0f3)
+![image](https://github.com/user-attachments/assets/e7737c42-16eb-4e46-a711-ed665466716e)
