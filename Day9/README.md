@@ -81,5 +81,6 @@ tkn pipeline start third-pipeline --showlog
 
 Expected output
 ![image](https://github.com/user-attachments/assets/893fea32-9774-4130-a9aa-0bbf59b25a32)
+![image](https://github.com/user-attachments/assets/797fab58-1705-42ee-bcfa-e7e676e872df)
 ![image](https://github.com/user-attachments/assets/88b44f21-99ad-494e-8e28-7efb5ab15367)
 
