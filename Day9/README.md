@@ -97,3 +97,16 @@ tkn task start task-with-configmap --showlog
 Expected output
 ![image](https://github.com/user-attachments/assets/cbd7e1d1-840a-43dc-932e-d560520fbd4c)
 ![image](https://github.com/user-attachments/assets/e7737c42-16eb-4e46-a711-ed665466716e)
+
+## Lab - Sharing data between TekTon Task steps
+```
+cd ~/tekton-march-2025
+git pull
+cd Day9/tekton
+cat task-with-configmap.yml
+oc apply -f sharing-data-between-steps-in-a-task.yml
+tkn task list
+tkn task start steps-sharing-data --showlog
+```
+Expected output
+![image](https://github.com/user-attachments/assets/09575a61-e648-4a53-91b7-59053627f10c)
