@@ -7,12 +7,12 @@ spec:
   - name: first-task
     taskRef:
       kind: Task
-      name: task1
+      name: task-1
 
   - name: second-task
     taskRef:
       kind: Task
-      name: task2
+      name: task-2
     runAfter: 
     - first-task
 
