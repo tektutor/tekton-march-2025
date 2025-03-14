@@ -180,6 +180,26 @@ Let's install the polling operator
 oc apply -f https://github.com/bigkevmcd/tekton-polling-operator/releases/download/v0.4.0/release-v0.4.0.yaml  
 </pre>
 
+```
+cd ~/tekton-march-2025
+git pull
+cd Day10/tekton-trigger-github-polling
+tkn pipeline list
+cat github-trigger.yml
+oc apply -f github-trigger.yml
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/1f5447ee-822d-45b5-be13-6be6b6ebcf6c)
+![image](https://github.com/user-attachments/assets/2eec3e41-bb6a-4e04-b8b5-5a7e7b6fe3fd)
+![image](https://github.com/user-attachments/assets/2e6f1ce0-93aa-41f7-a6a3-0b8840a7d587)
+![image](https://github.com/user-attachments/assets/d63ed7b2-80e5-46fe-a157-5ac54c6f3222)
+![image](https://github.com/user-attachments/assets/78ea59ab-089a-4a19-b232-b1f3e55a6152)
+![image](https://github.com/user-attachments/assets/3dddde07-b770-42f5-b004-50f5b06b185a)
+![image](https://github.com/user-attachments/assets/f4c65c51-72ef-4db6-a13c-1c5e1a596d7e)
+![image](https://github.com/user-attachments/assets/eb991550-2168-430d-b599-fe0618da6b4e)
+
+
 ## Lab - TekTon Trigger (GitHub webhook similulation with curl)
 ```
 cd ~/tekton-march-2025
