@@ -1,0 +1,14 @@
+apiVersion: tekton.dev/v1
+kind: TaskRun
+metadta:
+  generateName: first-tr-
+spec:
+  debug:
+    breakpoints:
+      onFailure: "enabled"
+      beforeSteps:
+      - {{ echo }}
+  taskSpec:
+    - taskRef:
+        - helloworld-task
+
