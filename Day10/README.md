@@ -131,3 +131,61 @@ spec:
       claimName: tekton-pvc-jegan #Replace 'jegan' with your name
     subPath: settings 
 </pre>
+
+## Lab - Triggering Tekton Pipeline using GitHub polling
+<pre>
+- We need to install tekton-polling operator
+- this helps triggering pipeline on local openshift setup
+- In case of local openshift setup, GitHub won't be able to invoke the Openshift public route url, hence the only way to trigger pipeline is using the polling operator
+</pre>
+
+Let's install the polling operator
+<pre>
+oc apply -f https://github.com/bigkevmcd/tekton-polling-operator/releases/download/v0.4.0/release-v0.4.0.yaml  
+</pre>
+
+## Lab - TekTon Trigger (GitHub webhook similulation with curl)
+```
+cd ~/openshift-tekton-june2024
+git pull
+cd Day10/tekton-trigger-github-webhook
+oc apply -f first-pipeline.yml
+oc apply -f tekton-trigger.yml
+```
+
+Check if the event listener pod is running
+```
+oc get pod --field-selector=status.phase==Running
+```
+Find the service name
+```
+oc get el tektutor-trigger-listener -o=jsonpath='{.status.configuration.generatedName}'
+```
+
+List the service now
+```
+oc get service $(oc get el tektutor-trigger-listener -o=jsonpath'{.status.configuration.generatedName}')
+```
+
+Load the service name into an environment variable
+```
+SVC_NAME=$(oc get el tektutor-trigger-listener -o=jsonpath='{.status.configuration.generatedName}')
+```
+
+Let's create a route
+```
+oc create route edge ${SVC_NAME}-route --service=${SVC_NAME}
+```
+
+See if the route is created
+```
+oc get route ${SVC_NAME}-route
+```
+
+Let's us invoke the Trigger now ( this is how github webhook will notifiy for Tekton Pipeline )
+```
+HOOK_URL=https://$(oc get route ${SVC_NAME}-route -o=jsonpath='{.spec.host}')
+curl --insecure --location --request POST ${HOOK_URL} --header 'Content-Type: application/json' --data-raw '{"name": "run-my-app", "run-it": "yes-please}'
+```
+
+Expected output
