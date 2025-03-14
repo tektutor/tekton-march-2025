@@ -70,6 +70,9 @@
 - This type of virtualization is called Heavy weight Virtualization, the reason being each VM requires dedicated hardware resources
 </pre>
 
+## Info - Hypervisor High Level Architecture
+![architecture](HypervisorHighLevelArchitecture.png)
+
 ## Container Technology
 <pre>
 - an application virtualization technology
@@ -88,6 +91,9 @@
 - each container gets its own file system
 - each containers gets its own port range - ( 0 to 65535 )
 </pre>
+
+## Info - Docker High Level Architecture
+![architecture](DockerHighLevelArchitecture.png)
 
 ## Info - Container Runtime Overview
 <pre>
@@ -155,6 +161,10 @@
   - aks - Azure Kubernetes Service ( PaaS )
 </pre>
 
+## Info - Kubernetes High Level Architecture
+![architecture](KubernetesArchitecture2.png)
+
+
 ## Info - Red Hat Openshift
 <pre>
 - Red Hat Openshift is developed on top of Google Kubernetes
@@ -176,6 +186,9 @@
 - However, Red Hat Openshift recommned using RHCOS Operating System in Master and Worker Nodes
 </pre>
 
+## Info - Red Hat Openshift High Level Architecture
+![architecture](OpenShiftArchitecture.png)
+
 ## Kubernetes/Openshift Master Nodes
 <pre>
 - Supports a special set of components called Control Plane Components
@@ -190,6 +203,7 @@
 - Every production grade Openshift supports atleast 3 master nodes
 - By default, only control planes components will be deployed on master nodes, however it is possible to configure master nodes to allow deploying user applications as well
 </pre>
+![mater](master-node.png)
 
 ## Kubernetes/Openshift Worker Nodes
 <pre>
@@ -210,6 +224,11 @@
 
 ## Info - Pod Overview
 <pre>
-- a group of related containers  
-  
+- a group of related containers
+- each Pod has a secret hidden infra-container called pause container
+- the pause container provides network features
+- the application container that runs in the Pod is connected to the pause container network
+- this is how, all the containers running in the same Pod shares the same IP address
 </pre>
+![pod](PodUpdated.png)
+
