@@ -249,3 +249,16 @@ Expected output
 ![image](https://github.com/user-attachments/assets/d9b20375-3a80-4f9a-bb5e-94680109cad5)
 ![image](https://github.com/user-attachments/assets/20c1759b-b5f4-4d88-9d9d-9638176b1d6b)
 
+## Lab - Using finally block to invoke clean task once all the tasks in the Pipeline completes its activities
+```
+cd ~/tekton-march-2025
+git pull
+cd Day10/
+oc apply -f first-pipeline-finally-task.yml
+tkn pipeline list
+tkn pipeline start first-pipeline --showlog
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/c53adf12-bf42-49ce-ba2d-fdb8cc6f8dc3)
+
