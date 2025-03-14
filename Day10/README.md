@@ -132,6 +132,16 @@ spec:
     subPath: settings 
 </pre>
 
+Running the java ci/cd pipeline
+```
+cd ~/tekton-march-2025
+git pull
+cd Day10
+oc apply -f java-cicd-pipeline.yml
+oc create -f java-cicd-pipeline-run.yml
+
+```
+
 ## Lab - Triggering Tekton Pipeline using GitHub polling
 <pre>
 - We need to install tekton-polling operator
