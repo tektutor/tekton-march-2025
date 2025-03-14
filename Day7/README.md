@@ -56,4 +56,9 @@ Click "Install"
 ![image](https://github.com/user-attachments/assets/87a8b9c9-46a5-43ac-9099-b418b594acf2)
 
 Once the "Red Hat Openshift Pipeline" Operator is installed, it will add the Pipeline Dashboard within Openshift webconsole.
+![image](https://github.com/user-attachments/assets/03b882ab-0432-43a1-a15b-4171359f1a07)
+
+As an Admimistrator, we need to install "tkn" client tool for all the users in that Linux server.
+![image](https://github.com/user-attachments/assets/0a702d5a-6e86-4ab2-8b93-3701e830cd9e)
+![image](https://github.com/user-attachments/assets/9309da4f-9c25-4f65-b4d5-5dd5f84fa75d)
 
