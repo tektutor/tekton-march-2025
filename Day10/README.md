@@ -24,7 +24,7 @@ spec:
   - ReadWriteMany
   persistentVolumeReclaimPolicy: Retain
   nfs:
-    server: 192.168.1.108  #Replace this IP with your remote desktop linux server IP
+    server: 192.168.1.231  #Replace this IP with your remote desktop linux server IP
     path: /var/share/jegan/tekton # Replace this path with your /var/nfs/user[xy]/share5
 ---
 apiVersion: v1
