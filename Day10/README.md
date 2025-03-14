@@ -262,3 +262,12 @@ tkn pipeline start first-pipeline --showlog
 Expected output
 ![image](https://github.com/user-attachments/assets/c53adf12-bf42-49ce-ba2d-fdb8cc6f8dc3)
 
+## Info - Using results of tasks in Tekton pipeline finally 
+<pre>
+https://tekton.dev/docs/pipelines/pipelines/#consuming-task-execution-results-in-finally
+</pre>
+
+## Info - Securing credentials or any sensitive data and using them in Tekton Task and/or Pipline
+<pre>
+https://tekton.dev/docs/pipelines/auth/  
+</pre>
