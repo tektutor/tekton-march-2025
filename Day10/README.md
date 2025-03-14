@@ -242,7 +242,10 @@ oc get route ${SVC_NAME}-route
 Let's us invoke the Trigger now ( this is how github webhook will notifiy for Tekton Pipeline )
 ```
 HOOK_URL=https://$(oc get route ${SVC_NAME}-route -o=jsonpath='{.spec.host}')
-curl --insecure --location --request POST ${HOOK_URL} --header 'Content-Type: application/json' --data-raw '{"name": "run-my-app", "run-it": "yes-please}'
+curl --insecure --location --request POST ${HOOK_URL} --header 'Content-Type: application/json' --data-raw '{"name": "run-my-app", "run-it": "yes-please"}'
 ```
 
 Expected output
+![image](https://github.com/user-attachments/assets/d9b20375-3a80-4f9a-bb5e-94680109cad5)
+![image](https://github.com/user-attachments/assets/20c1759b-b5f4-4d88-9d9d-9638176b1d6b)
+
