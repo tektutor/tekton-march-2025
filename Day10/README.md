@@ -137,6 +137,9 @@ Running the java ci/cd pipeline
 cd ~/tekton-march-2025
 git pull
 cd Day10
+oc project jegan
+tkn hub install task maven
+tkn hub install task git-clone
 oc apply -f java-cicd-pipeline.yml
 oc create -f java-cicd-pipeline-run.yml
 ```
