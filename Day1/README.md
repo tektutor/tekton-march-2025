@@ -187,7 +187,7 @@
 </pre>
 
 ## Info - Red Hat Openshift High Level Architecture
-![architecture](OpenShiftArchitecture.png)
+![architecture](openShiftArchitecture.png)
 
 ## Kubernetes/Openshift Master Nodes
 <pre>
