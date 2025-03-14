@@ -139,8 +139,17 @@ git pull
 cd Day10
 oc apply -f java-cicd-pipeline.yml
 oc create -f java-cicd-pipeline-run.yml
-
 ```
+
+Expected output
+![image](https://github.com/user-attachments/assets/e5173b01-663d-430c-8997-5b2904923e63)
+![image](https://github.com/user-attachments/assets/4e45e004-a3e4-49f6-aaca-943f60222af8)
+![image](https://github.com/user-attachments/assets/4abdb437-be7f-4078-923f-cae3ae6ce9bc)
+![image](https://github.com/user-attachments/assets/1e27109a-2684-4912-b9dd-805a70d39cee)
+![Uploading image.png…]()
+
+![image](https://github.com/user-attachments/assets/a85c129e-c6ee-4b0a-9517-5a8e56c9a081)
+
 
 ## Lab - Triggering Tekton Pipeline using GitHub polling
 <pre>
