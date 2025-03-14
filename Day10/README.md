@@ -146,7 +146,7 @@ oc apply -f https://github.com/bigkevmcd/tekton-polling-operator/releases/downlo
 
 ## Lab - TekTon Trigger (GitHub webhook similulation with curl)
 ```
-cd ~/openshift-tekton-june2024
+cd ~/tekton-march-2025
 git pull
 cd Day10/tekton-trigger-github-webhook
 oc apply -f first-pipeline.yml
