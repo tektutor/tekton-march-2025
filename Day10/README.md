@@ -150,6 +150,24 @@ Expected output
 ![image](https://github.com/user-attachments/assets/a85c129e-c6ee-4b0a-9517-5a8e56c9a081)
 
 
+## Info - Triggering Tekton Pipeline based on code commit
+<pre>
+- So far, we have been running the Tekton Pipeline manually
+- It is possible to configure the Pipeline to be invoked whenever there is a code commit
+- Triggering pipeline can be done in 2 ways
+  - Option 1 (Push) - GitHub Webhooks
+    - Whenever some engineer pushes code changes to the GitHub Repository, GitHub can notify the TekTon pipline
+    - preferred and recommended option
+    - this only works if your Openshift webconsole is accessible from Internet
+  - Option 2 (Pull) - TekTon Pipline polling
+    - In case, the Openshift webconsole is not accessible from Internet for GitHub we can go for this option
+    - Our lab setup, Openshift webconsole is not accessible from Internet, hence GitHub will not be able to notify our Tekton Pipeline when there is code commit
+    - Hence, we will be using this option to find code changes
+    - We need to install Tekton Trigger Polling Plugin to achieve this
+</pre>  
+Installing TekTon Trigger Polling Plugin
+![image](https://github.com/user-attachments/assets/3b6c9b7b-b143-410f-b6e8-9e4e7fe4c6df)
+
 ## Lab - Triggering Tekton Pipeline using GitHub polling
 <pre>
 - We need to install tekton-polling operator
